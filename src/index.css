@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 34 22% 95%;
+    --foreground: 228 12% 13%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 228 12% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 228 12% 13%;
+
+    --primary: 340 100% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 34 16% 91%;
+    --secondary-foreground: 220 8% 40%;
+
+    --muted: 34 10% 88%;
+    --muted-foreground: 220 8% 42%;
+
+    --accent: 220 62% 16%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 34 10% 85%;
+    --input: 34 10% 85%;
+    --ring: 340 100% 40%;
+
+    --radius: 0.5rem;
+
+    --gold: 38 67% 47%;
+    --gold-light: 38 55% 58%;
+    --gold-dark: 38 75% 38%;
+    --brand-navy: 220 62% 16%;
+    --brand-magenta: 340 100% 40%;
+    --brand-magenta-deep: 330 100% 30%;
+    --navy: 220 62% 16%;
+    --dark: 220 62% 16%;
+    --dark-surface: 220 62% 10%;
+    --gray-warm: 228 10% 22%;
+    --gray-light: 34 22% 95%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    line-height: 1.2;
+  }
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .text-navy-gradient {
+    background: linear-gradient(135deg, #002D51, #121C40);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gold-gradient {
+    background: linear-gradient(135deg, hsl(38 67% 47%), hsl(38 55% 55%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-magenta-gradient {
+    background: linear-gradient(135deg, #CE0058, #D92661);
+  }
+
+  .bg-gold-gradient {
+    background: linear-gradient(135deg, hsl(38 67% 47%), hsl(38 55% 55%));
+  }
+
+  .bg-dark-overlay {
+    background: linear-gradient(180deg, rgba(0, 45, 81, 0.82) 0%, rgba(18, 28, 64, 0.72) 100%);
+  }
+
+  .bg-navy-gradient {
+    background: linear-gradient(135deg, #002D51, #121C40);
+  }
+
+  .text-navy {
+    color: hsl(220 62% 16%);
+  }
+
+  .bg-navy\/10 {
+    background-color: rgba(0, 45, 81, 0.1);
+  }
+
+  .border-navy\/20 {
+    border-color: rgba(0, 45, 81, 0.2);
+  }
+
+  .border-navy\/30 {
+    border-color: rgba(0, 45, 81, 0.3);
+  }
+}
