@@ -68,7 +68,10 @@ const HeroSection = () => {
 
         <ScrollReveal delay={0.35}>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
-            <button className="bg-magenta-gradient text-white font-semibold shadow-lg hover:shadow-xl hover:brightness-110 transition-all duration-300 text-lg px-10 py-4 rounded-md">
+            <button
+              onClick={() => document.getElementById('cta')?.scrollIntoView({ behavior: 'smooth' })}
+              className="bg-magenta-gradient text-white font-semibold shadow-lg hover:shadow-xl hover:brightness-110 transition-all duration-300 text-lg px-10 py-4 rounded-md"
+            >
               {t('hero.cta')}
             </button>
             <a
