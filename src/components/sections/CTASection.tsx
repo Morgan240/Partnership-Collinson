@@ -3,9 +3,9 @@ import emailjs from "@emailjs/browser";
 import ScrollReveal from "@/components/ScrollReveal";
 import { useLanguage } from "@/i18n/LanguageContext";
 
-const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID ?? "service_fttktt8";
+const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID ?? "template_8v7g6po";
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY ?? "ih4ToboDHWu8hb4fI";
 const SHEETS_URL = import.meta.env.VITE_SHEETS_WEBHOOK_URL;
 
 const CTASection = () => {
@@ -22,19 +22,24 @@ const CTASection = () => {
     setStatus("loading");
 
     try {
-      await Promise.all([
+      const tasks: Promise<unknown>[] = [
         emailjs.send(
           SERVICE_ID,
           TEMPLATE_ID,
           { name, email, phone, time: new Date().toLocaleString() },
           PUBLIC_KEY
         ),
-        fetch(SHEETS_URL, {
-          method: "POST",
-          headers: { "Content-Type": "text/plain" },
-          body: JSON.stringify({ name, email, phone }),
-        }),
-      ]);
+      ];
+      if (SHEETS_URL) {
+        tasks.push(
+          fetch(SHEETS_URL, {
+            method: "POST",
+            headers: { "Content-Type": "text/plain" },
+            body: JSON.stringify({ name, email, phone }),
+          })
+        );
+      }
+      await Promise.all(tasks);
 
       setStatus("success");
       setName("");
