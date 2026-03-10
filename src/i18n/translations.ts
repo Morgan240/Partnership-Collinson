@@ -119,6 +119,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'cta.email': 'Email corporativo',
     'cta.submit': 'Solicitar demostración',
     'cta.note': '¿Preguntas? Contacte a su Partnership Manager directamente.',
+    'cta.success': '¡Gracias! Nos pondremos en contacto pronto.',
+    'cta.error': 'Algo salió mal. Por favor, inténtelo de nuevo.',
 
     'footer.copyright': '© 2026 Collinson Group Limited.',
     'footer.terms': 'Términos y condiciones',
@@ -244,6 +246,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'cta.email': 'Corporate email',
     'cta.submit': 'Request demo',
     'cta.note': 'Questions? Contact your Partnership Manager directly.',
+    'cta.success': "Thank you! We'll be in touch soon.",
+    'cta.error': 'Something went wrong. Please try again.',
 
     'footer.copyright': '© 2026 Collinson Group Limited.',
     'footer.terms': 'Terms and conditions',
@@ -369,6 +373,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'cta.email': 'Email corporativo',
     'cta.submit': 'Solicitar demonstração',
     'cta.note': 'Dúvidas? Entre em contato com seu Partnership Manager diretamente.',
+    'cta.success': 'Obrigado! Entraremos em contato em breve.',
+    'cta.error': 'Algo deu errado. Por favor, tente novamente.',
 
     'footer.copyright': '© 2026 Collinson Group Limited.',
     'footer.terms': 'Termos e condições',
