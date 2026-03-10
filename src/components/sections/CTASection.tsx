@@ -6,7 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID ?? "service_fttktt8";
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID ?? "template_8v7g6po";
 const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY ?? "ih4ToboDHWu8hb4fI";
-const SHEETS_URL = import.meta.env.VITE_SHEETS_WEBHOOK_URL;
+const POWER_AUTOMATE_URL = import.meta.env.VITE_POWER_AUTOMATE_URL;
 
 const CTASection = () => {
   const { t } = useLanguage();
@@ -30,11 +30,11 @@ const CTASection = () => {
           PUBLIC_KEY
         ),
       ];
-      if (SHEETS_URL) {
+      if (POWER_AUTOMATE_URL) {
         tasks.push(
-          fetch(SHEETS_URL, {
+          fetch(POWER_AUTOMATE_URL, {
             method: "POST",
-            headers: { "Content-Type": "text/plain" },
+            headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ name, email, phone }),
           })
         );
