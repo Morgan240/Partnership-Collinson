@@ -1,7 +1,7 @@
 import { Check } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import { useLanguage } from "@/i18n/LanguageContext";
-import collinsonLogo from "@/assets/collinson-logo.png";
+import collinsonLogo from "@/assets/Collinson_Logo_RGB_72dpi.png";
 
 const IntegrationSection = () => {
   const { t } = useLanguage();
@@ -39,7 +39,7 @@ const IntegrationSection = () => {
         <ScrollReveal delay={0.3}>
           <div className="text-center">
             <p className="text-muted-foreground text-xs mb-5 uppercase tracking-widest">{t('integration.badge')}</p>
-            <img src={collinsonLogo} alt="Collinson Group" className="h-12 mx-auto" />
+            <img src={collinsonLogo} alt="Collinson Group" className="h-16 mx-auto" />
           </div>
         </ScrollReveal>
       </div>

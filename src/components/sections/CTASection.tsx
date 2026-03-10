@@ -46,7 +46,7 @@ const CTASection = () => {
   };
 
   return (
-    <section className="py-28 bg-accent relative overflow-hidden">
+    <section id="cta" className="py-28 bg-accent relative overflow-hidden">
       <div className="relative z-10 container mx-auto px-6">
         <ScrollReveal>
           <h2 className="text-4xl md:text-5xl font-serif text-center mb-5 text-white">
