@@ -12,11 +12,12 @@ const CTASection = () => {
   const { t } = useLanguage();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!name.trim() || !email.trim()) return;
+    if (!name.trim() || !email.trim() || !phone.trim()) return;
 
     setStatus("loading");
 
@@ -25,19 +26,20 @@ const CTASection = () => {
         emailjs.send(
           SERVICE_ID,
           TEMPLATE_ID,
-          { name, email, time: new Date().toLocaleString() },
+          { name, email, phone, time: new Date().toLocaleString() },
           PUBLIC_KEY
         ),
         fetch(SHEETS_URL, {
           method: "POST",
           headers: { "Content-Type": "text/plain" },
-          body: JSON.stringify({ name, email }),
+          body: JSON.stringify({ name, email, phone }),
         }),
       ]);
 
       setStatus("success");
       setName("");
       setEmail("");
+      setPhone("");
     } catch {
       setStatus("error");
     }
@@ -76,6 +78,15 @@ const CTASection = () => {
                 placeholder={t('cta.email')}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+                required
+                className="w-full h-14 px-5 text-base rounded-xl border-2 text-white placeholder-white/40 outline-none focus:border-white/40 transition-colors"
+                style={{ backgroundColor: 'rgba(255,255,255,0.08)', borderColor: 'rgba(255,255,255,0.2)' }}
+              />
+              <input
+                type="tel"
+                placeholder={t('cta.phone')}
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
                 required
                 className="w-full h-14 px-5 text-base rounded-xl border-2 text-white placeholder-white/40 outline-none focus:border-white/40 transition-colors"
                 style={{ backgroundColor: 'rgba(255,255,255,0.08)', borderColor: 'rgba(255,255,255,0.2)' }}
