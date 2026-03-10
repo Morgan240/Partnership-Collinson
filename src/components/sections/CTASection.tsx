@@ -22,24 +22,18 @@ const CTASection = () => {
     setStatus("loading");
 
     try {
-      const tasks: Promise<unknown>[] = [
-        emailjs.send(
-          SERVICE_ID,
-          TEMPLATE_ID,
-          { name, email, phone, time: new Date().toLocaleString() },
-          PUBLIC_KEY
-        ),
-      ];
       if (POWER_AUTOMATE_URL) {
-        tasks.push(
-          fetch(POWER_AUTOMATE_URL, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ name, email, phone }),
-          })
-        );
+        await fetch(POWER_AUTOMATE_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, phone }),
+        });
       }
-      await Promise.all(tasks);
+
+      // EmailJS como fire-and-forget (falha não afeta o resultado)
+      emailjs
+        .send(SERVICE_ID, TEMPLATE_ID, { name, email, phone, time: new Date().toLocaleString() }, PUBLIC_KEY)
+        .catch(() => {});
 
       setStatus("success");
       setName("");
