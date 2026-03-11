@@ -1,7 +1,7 @@
 import { Check } from "lucide-react";
 import ScrollReveal from "@/components/ScrollReveal";
 import { useLanguage } from "@/i18n/LanguageContext";
-import collinsonLogo from "@/assets/Collinson_Logo_RGB_72dpi.png";
+import collinsonLogo from "@/assets/1-removebg-preview.png";
 
 const IntegrationSection = () => {
   const { t } = useLanguage();
