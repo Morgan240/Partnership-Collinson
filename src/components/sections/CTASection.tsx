@@ -6,7 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID ?? "service_fttktt8";
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID ?? "template_8v7g6po";
 const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY ?? "ih4ToboDHWu8hb4fI";
-const SHEETS_URL = import.meta.env.VITE_SHEETS_WEBHOOK_URL;
+const POWER_AUTOMATE_URL = import.meta.env.VITE_POWER_AUTOMATE_URL;
 
 const CTASection = () => {
   const { t } = useLanguage();
@@ -22,24 +22,18 @@ const CTASection = () => {
     setStatus("loading");
 
     try {
-      const tasks: Promise<unknown>[] = [
-        emailjs.send(
-          SERVICE_ID,
-          TEMPLATE_ID,
-          { name, email, phone, time: new Date().toLocaleString() },
-          PUBLIC_KEY
-        ),
-      ];
-      if (SHEETS_URL) {
-        tasks.push(
-          fetch(SHEETS_URL, {
-            method: "POST",
-            headers: { "Content-Type": "text/plain" },
-            body: JSON.stringify({ name, email, phone }),
-          })
-        );
+      if (POWER_AUTOMATE_URL) {
+        await fetch(POWER_AUTOMATE_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, phone }),
+        });
       }
-      await Promise.all(tasks);
+
+      // EmailJS como fire-and-forget (falha não afeta o resultado)
+      emailjs
+        .send(SERVICE_ID, TEMPLATE_ID, { name, email, phone, time: new Date().toLocaleString() }, PUBLIC_KEY)
+        .catch(() => {});
 
       setStatus("success");
       setName("");

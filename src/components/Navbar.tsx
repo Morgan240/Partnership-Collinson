@@ -1,6 +1,6 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import type { Language } from "@/i18n/translations";
-import collinsonLogoWhite from "@/assets/collinson-logo-white.png";
+import collinsonLogoWhite from "@/assets/CIL-Logo-white-on-blue.svg";
 
 const LanguageSwitcher = () => {
   const { language, setLanguage } = useLanguage();
@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-navy-gradient backdrop-blur-sm" style={{ height: '70px' }}>
       <div className="container mx-auto px-6 h-full flex items-center justify-between">
-        <img src={collinsonLogoWhite} alt="Collinson Group" className="h-12" />
+        <img src={collinsonLogoWhite} alt="Collinson Group" className="h-[70px]" />
         <LanguageSwitcher />
       </div>
     </nav>
