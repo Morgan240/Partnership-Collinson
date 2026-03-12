@@ -5,7 +5,7 @@ const Footer = () => {
   const { t } = useLanguage();
 
   return (
-    <footer className="py-14 bg-accent text-accent-foreground">
+    <footer className="py-14 bg-accent text-accent-foreground border-t border-white/10">
       <div className="container mx-auto px-6">
         <div className="flex flex-col items-center gap-7">
           <img src={collinsonLogoWhite} alt="Collinson Group" className="h-20" />

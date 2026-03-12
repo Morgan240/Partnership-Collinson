@@ -10,7 +10,7 @@ const ScreensSection = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-28 bg-secondary">
+    <section className="py-28 bg-background">
       <div className="container mx-auto px-6">
         <ScrollReveal>
           <h2 className="text-4xl md:text-5xl font-serif text-foreground text-center mb-4">
