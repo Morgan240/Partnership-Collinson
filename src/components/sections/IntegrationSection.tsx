@@ -39,7 +39,7 @@ const IntegrationSection = () => {
         <ScrollReveal delay={0.3}>
           <div className="text-center">
             <p className="text-muted-foreground text-xs mb-5 uppercase tracking-widest">{t('integration.badge')}</p>
-            <img src={collinsonLogo} alt="Collinson Group" className="h-16 mx-auto" />
+            <img src={collinsonLogo} alt="Collinson Group" className="w-[85%] md:w-auto md:h-24 mx-auto" />
           </div>
         </ScrollReveal>
       </div>
