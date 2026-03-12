@@ -33,8 +33,8 @@ export const FlightIntelligenceSection = () => {
         </ScrollReveal>
 
         <ScrollReveal delay={0.2}>
-          <div className="max-w-5xl mx-auto overflow-x-auto mb-16">
-            <div className="rounded-xl overflow-hidden border min-w-[640px]" style={{ borderColor: 'rgba(255,255,255,0.12)', backgroundColor: 'rgba(255,255,255,0.04)' }}>
+          <div className="-mx-6 px-6 overflow-x-auto mb-16 md:mx-0 md:px-0">
+            <div className="rounded-xl overflow-hidden border min-w-[640px] max-w-5xl mx-auto" style={{ borderColor: 'rgba(255,255,255,0.12)', backgroundColor: 'rgba(255,255,255,0.04)' }}>
               <div className="grid grid-cols-6 gap-4 p-5 text-xs font-semibold uppercase tracking-wider text-white/60" style={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
                 <span>{t('flight.col.passenger')}</span>
                 <span>{t('flight.col.flight')}</span>
