@@ -1,5 +1,5 @@
 import { useLanguage } from "@/i18n/LanguageContext";
-import collinsonLogoWhite from "@/assets/CIL-Logo.svg";
+import collinsonLogoWhite from "@/assets/CIL-Logo-white-on-blue.svg";
 
 const Footer = () => {
   const { t } = useLanguage();
