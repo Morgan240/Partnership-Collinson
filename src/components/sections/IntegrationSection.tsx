@@ -17,10 +17,7 @@ const IntegrationSection = () => {
           <h2 className="text-4xl md:text-5xl font-serif text-foreground text-center mb-4">
             {t('integration.title')}
           </h2>
-          <div className="w-20 h-0.5 bg-gold mx-auto mb-6" />
-          <p className="text-center text-secondary-foreground text-lg max-w-3xl mx-auto mb-16 leading-relaxed">
-            {t('integration.desc')}
-          </p>
+          <div className="w-20 h-0.5 bg-gold mx-auto mb-16" />
         </ScrollReveal>
 
         <ScrollReveal delay={0.15}>
