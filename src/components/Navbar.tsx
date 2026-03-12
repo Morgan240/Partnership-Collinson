@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-navy-gradient backdrop-blur-sm" style={{ height: '70px' }}>
       <div className="container mx-auto px-6 h-full flex items-center justify-between">
-        <img src={collinsonLogoWhite} alt="Collinson Group" className="h-10" />
+        <img src={collinsonLogoWhite} alt="Collinson Group" className="h-8" />
         <LanguageSwitcher />
       </div>
     </nav>
