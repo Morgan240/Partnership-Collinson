@@ -1,6 +1,6 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import type { Language } from "@/i18n/translations";
-import collinsonLogoWhite from "@/assets/2-removebg-preview.png";
+import collinsonLogoWhite from "@/assets/CIL-Logo.svg";
 
 const LanguageSwitcher = () => {
   const { language, setLanguage } = useLanguage();
