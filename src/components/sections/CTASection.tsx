@@ -6,7 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID ?? "service_fttktt8";
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID ?? "template_8v7g6po";
 const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY ?? "ih4ToboDHWu8hb4fI";
-const POWER_AUTOMATE_URL = import.meta.env.VITE_POWER_AUTOMATE_URL ?? "https://defaultdc26569974fc490eb9d0f41eb10554.50.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/d0582ec5f0a845d7b220b6162da7b1dd/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=hP-JVq8EJcSXLwDvH2gP5kbUP8erVy7Dytm9vtLaOfQ";
+const POWER_AUTOMATE_URL = import.meta.env.VITE_POWER_AUTOMATE_URL;
 
 const CTASection = () => {
   const { t } = useLanguage();
