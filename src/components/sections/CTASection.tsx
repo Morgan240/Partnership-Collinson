@@ -21,18 +21,21 @@ const CTASection = () => {
 
     setStatus("loading");
 
+    // Limpa o número: remove tudo que não for dígito
+    const cleanPhone = phone.replace(/\D/g, "");
+
     try {
       if (POWER_AUTOMATE_URL) {
         await fetch(POWER_AUTOMATE_URL, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name, email, phone }),
+          body: JSON.stringify({ name, email, phone: cleanPhone }),
         });
       }
 
       // EmailJS como fire-and-forget (falha não afeta o resultado)
       emailjs
-        .send(SERVICE_ID, TEMPLATE_ID, { name, email, phone, time: new Date().toLocaleString() }, PUBLIC_KEY)
+        .send(SERVICE_ID, TEMPLATE_ID, { name, email, phone: cleanPhone, time: new Date().toLocaleString() }, PUBLIC_KEY)
         .catch(() => {});
 
       setStatus("success");
