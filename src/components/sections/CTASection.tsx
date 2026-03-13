@@ -26,13 +26,14 @@ const CTASection = () => {
 
     const cleanPhone = phone.replace(/\D/g, "");
     const time = new Date().toISOString();
+    const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
     try {
       if (POWER_AUTOMATE_URL) {
         await fetch(POWER_AUTOMATE_URL, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name, email, phone: cleanPhone, time }),
+          body: JSON.stringify({ name, email, phone: cleanPhone, time, timezone }),
         });
       }
 
