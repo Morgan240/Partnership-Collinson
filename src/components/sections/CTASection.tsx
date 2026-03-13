@@ -29,7 +29,7 @@ const CTASection = () => {
         await fetch(POWER_AUTOMATE_URL, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ name, email, phone: cleanPhone }),
+          body: JSON.stringify({ name, email, phone: cleanPhone, time: new Date().toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo" }) }),
         });
       }
 
