@@ -1,0 +1,11520 @@
+/* Collinson Copyright 2024. All rights reserved. Version: 1.0.0 LMS-QA */
+
+position: absolute;
+width: 1653px;
+height: 19px;
+left: 75px;
+top: 1033px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+display: flex;
+align-items: flex-end;
+text-align: center;
+
+color: #212428;
+
+opacity: 0;
+
+
+/* Top Nav */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 20px 40px;
+gap: 996px;
+
+position: absolute;
+width: 1728px;
+height: 70px;
+left: 0px;
+top: 0px;
+
+background: #002D51;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 60px;
+
+margin: 0 auto;
+width: 428px;
+height: 30px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image */
+
+width: 123.21px;
+height: 30px;
+
+background: url(Collinson_Logo_CMYK_white.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Service Management Log */
+
+width: 54px;
+height: 19px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 60px;
+
+margin: 0 auto;
+width: 120px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Busyness Indicator */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+display: none;
+width: 84px;
+height: 19px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-end;
+padding: 0px;
+gap: 24px;
+
+width: 120px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* bell - alarm top nav interactive */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* bell - alarm */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* BsBellFill */
+
+position: absolute;
+left: 0%;
+right: 8.33%;
+top: 8.33%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 6.25%;
+right: 6.25%;
+top: -0.01%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* dashboard */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Bounding box */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #D9D9D9;
+
+
+/* Dashboard icon */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 16.67%;
+bottom: 0%;
+
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-end;
+padding: 0px;
+gap: 4px;
+
+position: absolute;
+width: 20px;
+height: 15px;
+left: 0px;
+top: -1px;
+
+
+
+/* Rectangle */
+
+margin: 0 auto;
+width: 5px;
+height: 6px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Rectangle */
+
+margin: 0 auto;
+width: 5px;
+height: 10px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Rectangle */
+
+margin: 0 auto;
+width: 5px;
+height: 15px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Rectangle */
+
+position: absolute;
+width: 4px;
+height: 20px;
+left: 0px;
+top: 16px;
+
+background: #FFFFFF;
+transform: rotate(90deg);
+
+
+/* User Icon */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* user-multiple-group--close-geometric-human-multiple-person-up-user */
+
+position: absolute;
+left: 14.29%;
+right: 14.29%;
+top: 10.71%;
+bottom: 0%;
+
+
+
+/* Union */
+
+position: absolute;
+left: 14.29%;
+right: 14.29%;
+top: 10.71%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* Side Nav */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 20px;
+gap: 16px;
+
+position: absolute;
+width: 75px;
+height: 1313px;
+left: 0px;
+top: 70px;
+
+background: #FFFFFF;
+border: 0px solid #BFBFBF;
+box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.09);
+
+
+/* collapse expand button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+
+width: 26px;
+height: 35px;
+
+background: #FFFFFF;
+border: 1px solid #BFBFBF;
+border-radius: 4px;
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* expand_more
+
+arrow, arrows, chevron, collapse, direction, expand, expandable, less, list, up
+*/
+
+width: 28px;
+height: 28px;
+
+transform: rotate(90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 34.56%;
+right: 15.44%;
+top: 25%;
+bottom: 44.12%;
+
+background: #212428;
+transform: rotate(90deg);
+
+
+/* short side nav */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+gap: 8px;
+
+width: 35px;
+height: 35px;
+
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* user-add-plus--actions-add-close-geometric-human-person-plus-single-up-user */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* user-add-plus--actions-add-close-geometric-human-person-plus-single-up-user */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 17.86%;
+right: 46.43%;
+top: 3.57%;
+bottom: 60.71%;
+
+border: 1px solid #212428;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 3.57%;
+right: 50%;
+top: 53.54%;
+bottom: 10.71%;
+
+border: 1px solid #212428;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 75%;
+right: 25%;
+top: 53.57%;
+bottom: 3.57%;
+
+border: 1px solid #212428;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 53.57%;
+right: 3.57%;
+top: 75%;
+bottom: 25%;
+
+border: 1px solid #212428;
+
+
+/* short side nav */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+gap: 8px;
+
+width: 35px;
+height: 35px;
+
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* chat-bubble-square-write--messages-message-bubble-chat-square-write-review-pen-pencil-compose */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 1px;
+gap: 10px;
+
+width: 19px;
+height: 16.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* chat-bubble-square-write--messages-message-bubble-chat-square-write-review-pen-pencil-compose */
+
+width: 14.86px;
+height: 14.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 10.9%;
+right: 10.9%;
+top: 5.93%;
+bottom: 5.93%;
+
+border: 1px solid #212428;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 40.15%;
+right: 11.69%;
+top: 6.82%;
+bottom: 38.63%;
+
+border: 1px solid #212428;
+
+
+/* short side nav */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+gap: 8px;
+
+width: 35px;
+height: 35px;
+
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* calendar-edit--calendar-date-day-compose-edit-note */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 1px;
+gap: 10px;
+
+width: 19px;
+height: 16.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* calendar-edit--calendar-date-day-compose-edit-note */
+
+width: 14.86px;
+height: 14.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 10.9%;
+right: 10.9%;
+top: 16.1%;
+bottom: 5.93%;
+
+border: 1px solid #212428;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 28.95%;
+right: 71.05%;
+top: 5.93%;
+bottom: 73.73%;
+
+border: 1px solid #212428;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 71.05%;
+right: 28.95%;
+top: 5.93%;
+bottom: 73.73%;
+
+border: 1px solid #212428;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 28.95%;
+right: 40.98%;
+top: 16.1%;
+bottom: 83.9%;
+
+border: 1px solid #212428;
+
+
+/* Vector_5 */
+
+position: absolute;
+left: 31.95%;
+right: 31.95%;
+top: 38.13%;
+bottom: 21.19%;
+
+border: 1px solid #212428;
+
+
+/* short side nav */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+gap: 8px;
+
+width: 35px;
+height: 35px;
+
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* circle-clock--clock-loading-measure-time-circle */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 1px;
+gap: 10px;
+
+width: 19px;
+height: 16.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* circle-clock--clock-loading-measure-time-circle */
+
+width: 14.86px;
+height: 14.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 10.9%;
+right: 10.9%;
+top: 5.93%;
+bottom: 5.93%;
+
+border: 1px solid #212428;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 50%;
+right: 34.72%;
+top: 33.05%;
+bottom: 29.93%;
+
+border: 1px solid #212428;
+
+
+/* short side nav */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+gap: 8px;
+
+width: 35px;
+height: 35px;
+
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* browser-add--app-code-apps-add-window-plus */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* browser-add--app-code-apps-add-window-plus */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+border: 1px solid #212428;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 25%;
+bottom: 75%;
+
+border: 1px solid #212428;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 32.14%;
+right: 32.14%;
+top: 60.71%;
+bottom: 39.29%;
+
+border: 1px solid #212428;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 50%;
+right: 50%;
+top: 42.86%;
+bottom: 21.43%;
+
+border: 1px solid #212428;
+
+
+/* short side nav */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+gap: 8px;
+
+width: 35px;
+height: 35px;
+
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+
+/* dashboard icons */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 2px 0px;
+gap: 10px;
+
+width: 19px;
+height: 14.92px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Vector */
+
+width: 15.23px;
+height: 10.92px;
+
+background: #212428;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vector 378 */
+
+box-sizing: border-box;
+
+display: none;
+width: 6px;
+height: 3px;
+
+background: #212428;
+border: 1px solid #212428;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* short side nav */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+gap: 8px;
+
+display: none;
+width: 35px;
+height: 35px;
+
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+flex-grow: 0;
+
+
+/* short side nav */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+gap: 8px;
+
+width: 35px;
+height: 35px;
+
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+flex-grow: 0;
+
+
+/* airport-plane */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* airport-plane */
+
+position: absolute;
+left: 3.93%;
+right: 3.93%;
+top: 3.93%;
+bottom: 3.93%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 3.93%;
+right: 3.93%;
+top: 3.93%;
+bottom: 3.93%;
+
+border: 1px solid #212428;
+
+
+/* short side nav */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+gap: 4px;
+
+width: 35px;
+height: 35px;
+
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+flex-grow: 0;
+
+
+/* user-single-neutral-male--close-geometric-human-person-single-up-user-male */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* user-single-neutral-male--close-geometric-human-person-single-up-user-male */
+
+position: absolute;
+left: 5.86%;
+right: 5.86%;
+top: 3.83%;
+bottom: 3.57%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.86%;
+right: 5.86%;
+top: 64.23%;
+bottom: 3.57%;
+
+border: 1px solid #212428;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 19.77%;
+right: 19.77%;
+top: 3.83%;
+bottom: 35.71%;
+
+border: 1px solid #212428;
+
+
+/* Ellipse */
+
+position: absolute;
+left: 40.13%;
+right: 40.13%;
+top: 45.75%;
+bottom: 49.31%;
+
+border: 1px solid #212428;
+
+
+/* Intersect */
+
+position: absolute;
+left: 21.24%;
+right: 20.32%;
+top: 3.83%;
+bottom: 71.7%;
+
+border: 1px solid #212428;
+
+
+/* vector 378 */
+
+box-sizing: border-box;
+
+width: 6px;
+height: 3px;
+
+background: #212428;
+border: 1px solid #212428;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* short side nav */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+gap: 4px;
+
+width: 35px;
+height: 35px;
+
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 10;
+flex-grow: 0;
+
+
+/* admin icon */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 1px 0px;
+gap: 10px;
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* user-protection-2âshield-secure-security-profile-person */
+
+width: 13.5px;
+height: 13.5px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 7.81%;
+right: 7.81%;
+top: 7.82%;
+bottom: 7.82%;
+
+border: 1px solid #212428;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 22.98%;
+right: 22.98%;
+top: 59.74%;
+bottom: 25.78%;
+
+border: 1px solid #212428;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 35.4%;
+right: 35.4%;
+top: 20.8%;
+bottom: 49.99%;
+
+border: 1px solid #212428;
+
+
+/* vector 378 */
+
+box-sizing: border-box;
+
+width: 6px;
+height: 3px;
+
+background: #212428;
+border: 1px solid #212428;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* short side nav */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+gap: 4px;
+
+width: 35px;
+height: 35px;
+
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 11;
+flex-grow: 0;
+
+
+/* strategy-tasks--strategy-tasks-work */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* strategy-tasks--strategy-tasks-work */
+
+position: absolute;
+left: 14.29%;
+right: 14.29%;
+top: 3.57%;
+bottom: 3.57%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 14.29%;
+right: 14.29%;
+top: 10.71%;
+bottom: 3.57%;
+
+border: 1px solid #212428;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 32.14%;
+right: 32.14%;
+top: 3.57%;
+bottom: 78.57%;
+
+border: 1px solid #212428;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 28.9%;
+right: 53.24%;
+top: 35.38%;
+bottom: 46.76%;
+
+border: 1px solid #212428;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 53.23%;
+right: 28.91%;
+top: 63.09%;
+bottom: 19.05%;
+
+border: 1px solid #212428;
+
+
+/* Vector_5 */
+
+position: absolute;
+left: 53.24%;
+right: 28.9%;
+top: 63.09%;
+bottom: 19.05%;
+
+border: 1px solid #212428;
+
+
+/* vector 378 */
+
+box-sizing: border-box;
+
+width: 6px;
+height: 3px;
+
+background: #212428;
+border: 1px solid #212428;
+transform: rotate(-90deg);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* short side nav */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px;
+gap: 8px;
+
+display: none;
+width: 35px;
+height: 35px;
+
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 12;
+flex-grow: 0;
+
+
+/* Search Bar and Page View */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+align-content: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 1424px;
+height: 40px;
+left: 218px;
+top: 110px;
+
+
+
+/* Frame */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 280px;
+height: 40px;
+
+background: #F8F7FF;
+border: 1px solid #BFBFBF;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 8px 6px;
+gap: 10px;
+
+display: none;
+width: 28px;
+height: 33px;
+
+background: #FFFFFF;
+border: 1px solid #BFBFBF;
+border-radius: 4px 0px 0px 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 0px 0px 12px;
+gap: 10px;
+
+width: 280px;
+height: 19px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Search */
+
+width: 268px;
+height: 19px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+color: #4B4F54;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Frame */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 7px 10px;
+gap: 10px;
+
+display: none;
+width: 70px;
+height: 40px;
+
+background: #007DBA;
+border: 1px solid #BFBFBF;
+border-radius: 0px 4px 4px 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Refresh/Paige count */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 4px 8px;
+gap: 7px;
+
+width: 75px;
+height: 40px;
+
+background: #FFFFFF;
+border: 1px solid #BFBFBF;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* 10 */
+
+width: 36px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #4B4F54;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* chevron-down */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 37.5%;
+bottom: 37.5%;
+
+border: 1px solid #4B4F54;
+
+
+/* Add to Waitlist manually with scan */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 20px 30px;
+gap: 40px;
+
+position: absolute;
+width: 1424px;
+height: 270px;
+left: 218px;
+top: 190px;
+
+background: #CCE5F1;
+/* shadow 1
+
+box
+*/
+box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+
+
+/* Input Form re-thought */
+
+display: none;
+width: 312px;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* text field min-width/max-width */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+display: none;
+width: 168px;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 1364px;
+height: 230px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 40px;
+
+width: 1364px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 40px;
+
+margin: 0 auto;
+width: 865px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Scan and/or manually add passenger to waitlist */
+
+width: 531px;
+height: 32px;
+
+/* h3 */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 32px;
+/* identical to box height, or 128% */
+display: flex;
+align-items: flex-end;
+
+color: #4B4F54;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* buttons */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+margin: 0 auto;
+width: 192px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* button logic */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+width: 88px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* state=default, size=small, style=primary */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+
+width: 88px;
+height: 48px;
+
+background: #FFFFFF;
+border: 2px solid #BFBFBF;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* prefix */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 0px 0px 12px;
+gap: 8px;
+
+display: none;
+width: 28px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* content */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 20px;
+gap: 8px;
+
+width: 78px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* label */
+
+width: 38px;
+height: 23px;
+
+/* BUTTON */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+/* identical to box height, or 22px */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* suffix */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 12px 0px 0px;
+gap: 8px;
+
+display: none;
+width: 28px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* button logic */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+width: 88px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* state=default, size=small, style=primary */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+width: 88px;
+height: 48px;
+
+background: #CE0058;
+border: 1px solid #CE0058;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* prefix */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 0px 0px 12px;
+gap: 8px;
+
+display: none;
+width: 28px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* content */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 20px;
+gap: 8px;
+
+width: 88px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* label */
+
+width: 29px;
+height: 23px;
+
+/* BUTTON */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 140%;
+/* identical to box height, or 22px */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* suffix */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 12px 0px 0px;
+gap: 8px;
+
+display: none;
+width: 28px;
+height: 48px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+width: 1364px;
+height: 162px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 1364px;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 3px 4px;
+gap: 12px;
+
+width: 329px;
+height: 56px;
+
+background: #FFFFFF;
+border: 1px dashed #108476;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 0px 0px 0px 4px;
+gap: 8px;
+
+width: 106px;
+height: 46px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* boarding-pass-dig-card-01 1 */
+
+width: 28px;
+height: 46px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 2.76%;
+right: 3.59%;
+top: 1.98%;
+bottom: 2.04%;
+
+border: 1.5px solid #108476;
+
+
+/* Vector */
+
+position: absolute;
+left: 27.52%;
+right: 28.35%;
+top: 2.24%;
+bottom: 91.02%;
+
+border: 1.5px solid #108476;
+
+
+/* Vector */
+
+position: absolute;
+left: 1.34%;
+right: 3.59%;
+top: 86.67%;
+bottom: 13.33%;
+
+border: 1.5px solid #108476;
+
+
+/* Group */
+
+position: absolute;
+left: 19.16%;
+right: 19.99%;
+top: 41.97%;
+bottom: 20.51%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 19.16%;
+right: 19.99%;
+top: 41.97%;
+bottom: 20.51%;
+
+border: 1.5px solid #108476;
+
+
+/* Group */
+
+position: absolute;
+left: 29.05%;
+right: 29.37%;
+top: 47.34%;
+bottom: 27.06%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 54.27%;
+right: 29.37%;
+top: 47.34%;
+bottom: 42.57%;
+
+border: 1.5px solid #108476;
+
+
+/* Vector */
+
+position: absolute;
+left: 29.05%;
+right: 54.59%;
+top: 47.34%;
+bottom: 42.57%;
+
+border: 1.5px solid #108476;
+
+
+/* Vector */
+
+position: absolute;
+left: 54.27%;
+right: 29.37%;
+top: 62.86%;
+bottom: 27.05%;
+
+border: 1.5px solid #108476;
+
+
+/* Vector */
+
+position: absolute;
+left: 29.05%;
+right: 54.59%;
+top: 62.86%;
+bottom: 27.05%;
+
+border: 1.5px solid #108476;
+
+
+/* Vector */
+
+position: absolute;
+left: 27.2%;
+right: 28.03%;
+top: 18.39%;
+bottom: 65.78%;
+
+border: 1.5px solid #108476;
+
+
+/* boarding-pass copy */
+
+width: 66px;
+height: 34px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Group */
+
+position: absolute;
+left: 1.44%;
+right: 1.44%;
+top: 4.16%;
+bottom: 4.56%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 1.44%;
+right: 31.16%;
+top: 4.16%;
+bottom: 4.57%;
+
+border: 1.5px solid #108476;
+
+
+/* Vector */
+
+position: absolute;
+left: 68.84%;
+right: 1.44%;
+top: 4.16%;
+bottom: 4.56%;
+
+border: 1.5px solid #108476;
+
+
+/* Group */
+
+position: absolute;
+left: 68.84%;
+right: 31.16%;
+top: 21.12%;
+bottom: 22.1%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 68.84%;
+right: 31.16%;
+top: 21.12%;
+bottom: 75.09%;
+
+border: 1.5px solid #108476;
+
+
+/* Vector */
+
+position: absolute;
+left: 68.84%;
+right: 31.16%;
+top: 36.78%;
+bottom: 31.83%;
+
+border: 1.5px dashed #108476;
+
+
+/* Vector */
+
+position: absolute;
+left: 68.84%;
+right: 31.16%;
+top: 74.11%;
+bottom: 22.1%;
+
+border: 1.5px solid #108476;
+
+
+/* Group */
+
+position: absolute;
+left: 32.95%;
+right: 38.95%;
+top: 21.74%;
+bottom: 23.74%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 32.95%;
+right: 38.95%;
+top: 21.74%;
+bottom: 23.76%;
+
+border: 1.5px solid #108476;
+
+
+/* Vector */
+
+position: absolute;
+left: 32.96%;
+right: 38.95%;
+top: 21.74%;
+bottom: 23.74%;
+
+border: 1.5px solid #108476;
+
+
+/* Vector */
+
+position: absolute;
+left: 76.4%;
+right: 13.73%;
+top: 58.7%;
+bottom: 41.3%;
+
+border: 1.5px solid #108476;
+
+
+/* Vector */
+
+position: absolute;
+left: 76.4%;
+right: 10.57%;
+top: 70.18%;
+bottom: 29.82%;
+
+border: 1.5px solid #108476;
+
+
+/* Vector */
+
+position: absolute;
+left: 76.4%;
+right: 13.73%;
+top: 80.43%;
+bottom: 19.56%;
+
+border: 1.5px solid #108476;
+
+
+/* Vector */
+
+position: absolute;
+left: 9.09%;
+right: 81.77%;
+top: 56.18%;
+bottom: 43.82%;
+
+border: 1.5px solid #108476;
+
+
+/* Vector */
+
+position: absolute;
+left: 9.09%;
+right: 78.61%;
+top: 69.84%;
+bottom: 30.16%;
+
+border: 1.5px solid #108476;
+
+
+/* Vector */
+
+position: absolute;
+left: 9.09%;
+right: 81.77%;
+top: 84.04%;
+bottom: 15.96%;
+
+border: 1.5px solid #108476;
+
+
+/* Vector */
+
+position: absolute;
+left: 78.41%;
+right: 13.64%;
+top: 32.61%;
+bottom: 52.17%;
+
+border: 1.5px solid #108476;
+
+
+/* Vector */
+
+position: absolute;
+left: 86.36%;
+right: 7.95%;
+top: 13.04%;
+bottom: 76.09%;
+
+border: 1.5px solid #108476;
+
+
+/* Vector */
+
+position: absolute;
+left: 76.14%;
+right: 18.18%;
+top: 13.04%;
+bottom: 76.09%;
+
+border: 1.5px solid #108476;
+
+
+/* A1 */
+
+position: absolute;
+left: 7.78%;
+right: 73.7%;
+top: 15.66%;
+bottom: 49.57%;
+
+background: #108476;
+
+
+/* Scan the boarding pass, and add outstanding information manually. */
+
+width: 203px;
+height: 32px;
+
+/* tooltip */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+/* or 133% */
+display: flex;
+align-items: flex-end;
+
+color: #0B584F;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* text field min-width/max-width */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 329px;
+height: 55px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Input Form re-thought */
+
+width: 329px;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* help */
+
+position: absolute;
+width: 298px;
+height: 25px;
+left: 0px;
+top: 25px;
+
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+
+color: #4B4F54;
+
+
+
+/* input field new */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 4px 12px;
+gap: 10px;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+border: 1px solid #80BDDC;
+border-radius: 4px;
+
+
+/* label */
+
+width: 305px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 120%;
+/* or 14px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: #4B4F54;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 305px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 305px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* icon-after */
+
+display: none;
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 305px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 305px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Guest Count */
+
+width: 305px;
+height: 10px;
+
+/* input */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: #71757A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* 16/Phosphor Icons / X */
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* icon-before */
+
+display: none;
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+display: none;
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Placeholder */
+
+display: none;
+width: 106px;
+height: 28px;
+
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+display: flex;
+align-items: center;
+
+color: #6B6B6B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* text field min-width/max-width */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 329px;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 1;
+
+
+/* Input Form re-thought */
+
+width: 329px;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* help */
+
+position: absolute;
+visibility: hidden;
+width: 298px;
+height: 23px;
+left: 0px;
+top: 1px;
+
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+/* identical to box height */
+
+color: #6B6B6B;
+
+
+
+/* input field new */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 4px 12px;
+gap: 10px;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+border: 1px solid #80BDDC;
+border-radius: 4px;
+
+
+/* icon-before */
+
+display: none;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* label */
+
+width: 305px;
+height: 9px;
+
+/* label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 120%;
+/* or 14px */
+display: flex;
+align-items: center;
+
+color: #4B4F54;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 7px;
+
+width: 305px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 291px;
+height: 10px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Guest Count */
+
+width: 40px;
+height: 10px;
+
+/* input */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: #71757A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* 16/Phosphor Icons / X */
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+margin: 0 auto;
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector_2 */
+
+width: 12px;
+height: 6px;
+
+border: 1.25px solid #71757A;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Placeholder */
+
+display: none;
+width: 106px;
+height: 28px;
+
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+display: flex;
+align-items: center;
+
+color: #6B6B6B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* icon-after */
+
+display: none;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* text field min-width/max-width */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 329px;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 1;
+
+
+/* Input Form re-thought */
+
+width: 329px;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* input field new */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 4px 12px;
+gap: 10px;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+border: 1px solid #80BDDC;
+border-radius: 4px;
+
+
+/* icon-before */
+
+display: none;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* label + help pair */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 305px;
+height: 9px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* label */
+
+width: 305px;
+height: 9px;
+
+/* label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 120%;
+/* or 14px */
+display: flex;
+align-items: center;
+
+color: #4B4F54;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* help */
+
+display: none;
+width: 298px;
+height: 23px;
+
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+/* identical to box height */
+
+color: #6B6B6B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 305px;
+height: 10px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Departure Time */
+
+margin: 0 auto;
+width: 305px;
+height: 10px;
+
+/* input */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: #71757A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* circle-clock--clock-loading-measure-time-circle */
+
+margin: 0 auto;
+display: none;
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Placeholder */
+
+display: none;
+width: 106px;
+height: 28px;
+
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+display: flex;
+align-items: center;
+
+color: #6B6B6B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* icon-after */
+
+display: none;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: flex-start;
+align-content: flex-start;
+padding: 0px;
+gap: 16px;
+
+width: 1364px;
+height: 86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Switch email phone */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 329px;
+height: 86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* text field min-width/max-width */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 329px;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Input Form re-thought */
+
+width: 329px;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* help */
+
+position: absolute;
+width: 298px;
+height: 25px;
+left: 0px;
+top: 25px;
+
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+
+color: #6B6B6B;
+
+
+
+/* input field new */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 4px 12px;
+gap: 10px;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+border: 1px solid #80BDDC;
+border-radius: 4px;
+
+
+/* label */
+
+width: 305px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 120%;
+/* or 14px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: #4B4F54;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 305px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 305px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* icon-after */
+
+display: none;
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 305px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 305px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Guest Count */
+
+width: 305px;
+height: 10px;
+
+/* input */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: #71757A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* 16/Phosphor Icons / X */
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* icon-before */
+
+display: none;
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+display: none;
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Placeholder */
+
+display: none;
+width: 106px;
+height: 28px;
+
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+display: flex;
+align-items: center;
+
+color: #6B6B6B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* radio check switch button + text */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 4px 12px;
+gap: 8px;
+
+width: 329px;
+height: 23px;
+
+background: #CCE5F1;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* radio button */
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Checkbox */
+
+display: none;
+width: 27px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Toggle */
+
+width: 27px;
+height: 15px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Rectangle */
+
+position: absolute;
+width: 27px;
+height: 14px;
+left: 0px;
+top: 0px;
+
+background: #007DBA;
+border-radius: 9px;
+
+
+/* Vector */
+
+position: absolute;
+left: 54.05%;
+right: 6.72%;
+top: 13.33%;
+bottom: 17.33%;
+
+background: #FFFFFF;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+
+
+/* Create Service */
+
+width: 204px;
+height: 10px;
+
+/* input */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+
+color: #4B4F54;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* text field min-width/max-width */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 329px;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Input Form re-thought */
+
+width: 329px;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* help */
+
+position: absolute;
+visibility: hidden;
+width: 298px;
+height: 23px;
+left: 0px;
+top: 1px;
+
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+/* identical to box height */
+
+color: #6B6B6B;
+
+
+
+/* input field new */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 4px 12px;
+gap: 10px;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+border: 1px solid #80BDDC;
+border-radius: 4px;
+
+
+/* icon-before */
+
+display: none;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* label */
+
+width: 305px;
+height: 9px;
+
+/* label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 120%;
+/* or 14px */
+display: flex;
+align-items: center;
+
+color: #4B4F54;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 7px;
+
+width: 305px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 291px;
+height: 10px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Guest Count */
+
+width: 291px;
+height: 10px;
+
+/* input */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: #71757A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* 16/Phosphor Icons / X */
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+margin: 0 auto;
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector_2 */
+
+width: 12px;
+height: 6px;
+
+border: 1.25px solid #71757A;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Placeholder */
+
+display: none;
+width: 106px;
+height: 28px;
+
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+display: flex;
+align-items: center;
+
+color: #6B6B6B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* icon-after */
+
+display: none;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Input Form re-thought */
+
+width: 329px;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 1;
+
+
+/* help */
+
+position: absolute;
+visibility: hidden;
+width: 298px;
+height: 23px;
+left: 0px;
+top: 1px;
+
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+/* identical to box height */
+
+color: #6B6B6B;
+
+
+
+/* input field new */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 4px 12px;
+gap: 10px;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+border: 1px solid #80BDDC;
+border-radius: 4px;
+
+
+/* icon-before */
+
+display: none;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* label */
+
+width: 305px;
+height: 9px;
+
+/* label */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 120%;
+/* or 14px */
+display: flex;
+align-items: center;
+
+color: #4B4F54;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 7px;
+
+width: 305px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 291px;
+height: 10px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Guest Count */
+
+width: 79px;
+height: 10px;
+
+/* input */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: #71757A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* 16/Phosphor Icons / X */
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+margin: 0 auto;
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Vector_2 */
+
+width: 12px;
+height: 6px;
+
+border: 1.25px solid #71757A;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Placeholder */
+
+display: none;
+width: 106px;
+height: 28px;
+
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+display: flex;
+align-items: center;
+
+color: #6B6B6B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* icon-after */
+
+display: none;
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Input Form re-thought */
+
+width: 329px;
+height: 56px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 1;
+
+
+/* help */
+
+position: absolute;
+width: 298px;
+height: 25px;
+left: 0px;
+top: 25px;
+
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+
+color: #6B6B6B;
+
+
+
+/* input field new */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 4px 12px;
+gap: 10px;
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+border: 1px solid #80BDDC;
+border-radius: 4px;
+
+
+/* label */
+
+width: 305px;
+height: 9px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 120%;
+/* or 14px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: #4B4F54;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 305px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 305px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* icon-after */
+
+display: none;
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+width: 305px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 305px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Guest Count */
+
+width: 305px;
+height: 10px;
+
+/* input */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+/* or 20px */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+color: #71757A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* 16/Phosphor Icons / X */
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* icon-before */
+
+display: none;
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+display: none;
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Placeholder */
+
+display: none;
+width: 106px;
+height: 28px;
+
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+display: flex;
+align-items: center;
+
+color: #6B6B6B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Waitlist functions */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 1424px;
+height: 400px;
+left: 218px;
+top: 500px;
+
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 30px;
+
+width: 1424px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 30px;
+
+margin: 0 auto;
+width: 336px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 110px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Waitlist general */
+
+width: 84px;
+height: 32px;
+
+/* h3 */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 32px;
+/* identical to box height, or 128% */
+display: flex;
+align-items: center;
+
+color: #4B4F54;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Refresh */
+
+display: none;
+width: 28px;
+height: 28px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+width: 16px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* heroicons-micro/question-mark-circle */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Subtract */
+
+position: absolute;
+width: 14px;
+height: 14px;
+left: 1px;
+top: 1px;
+
+background: #108476;
+
+
+/* Lounge Capacity Estimator */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 196px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+display: none;
+width: 217px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 4px;
+
+display: none;
+width: 102px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-end;
+padding: 0px;
+gap: 12px;
+
+width: 196px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+display: none;
+width: 117px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+display: none;
+width: 87px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 196px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Leaving soon */
+
+width: 156px;
+height: 18px;
+
+/* caption */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+/* identical to box height, or 129% */
+text-align: center;
+
+color: #4B4F54;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 8px;
+gap: 10px;
+
+width: 32px;
+height: 24px;
+
+background: #F8F7FF;
+border: 1px solid #BFBFBF;
+border-radius: 4px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* 11 */
+
+width: 16px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 20px;
+
+margin: 0 auto;
+width: 184px;
+height: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* radio check switch button + text */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 184px;
+height: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* radio button */
+
+display: none;
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Checkbox */
+
+display: none;
+width: 27px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Toggle */
+
+width: 27px;
+height: 15px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Rectangle */
+
+position: absolute;
+width: 27px;
+height: 14px;
+left: 0px;
+top: 0px;
+
+background: #007DBA;
+border-radius: 9px;
+
+
+/* Vector */
+
+position: absolute;
+left: 54.05%;
+right: 6.72%;
+top: 13.33%;
+bottom: 17.33%;
+
+background: #FFFFFF;
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+
+
+/* Create Service */
+
+width: 149px;
+height: 22px;
+
+/* p */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height, or 138% */
+
+color: #4B4F54;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* button logic */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+display: none;
+width: 118px;
+height: 38px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* table waitlist fm */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+
+width: 1424px;
+height: 356px;
+
+/* shadow 1
+
+box
+*/
+box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Waitlist Table FM Update */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 5px 20px;
+gap: 80px;
+isolation: isolate;
+
+width: 1424px;
+height: 44px;
+
+background: #CCE5F1;
+border: 1px solid #80BDDC;
+border-radius: 8px 8px 0px 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+margin: -1px 0px;
+
+
+/* Position */
+
+margin: 0 auto;
+display: none;
+width: 52px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 16;
+
+
+/* Check-In */
+
+margin: 0 auto;
+width: 56px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 15;
+
+
+/* Edit */
+
+margin: 0 auto;
+width: 25px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 14;
+
+
+/* Notify */
+
+margin: 0 auto;
+width: 38px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 13;
+
+
+/* Notified */
+
+margin: 0 auto;
+width: 65px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+z-index: 12;
+
+
+/* Delete */
+
+margin: 0 auto;
+width: 40px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+z-index: 11;
+
+
+/* Source */
+
+margin: 0 auto;
+width: 51px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+z-index: 10;
+
+
+/* Passenger Name */
+
+margin: 0 auto;
+width: 180px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+flex-grow: 0;
+z-index: 9;
+
+
+/* Time Elapsed */
+
+margin: 0 auto;
+width: 85px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+flex-grow: 0;
+z-index: 8;
+
+
+/* Access Program */
+
+margin: 0 auto;
+width: 104px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+text-align: right;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+flex-grow: 0;
+z-index: 7;
+
+
+/* Flight # */
+
+margin: 0 auto;
+width: 80px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 10;
+flex-grow: 0;
+z-index: 6;
+
+
+/* Flight Status */
+
+margin: 0 auto;
+width: 150px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 11;
+flex-grow: 0;
+z-index: 5;
+
+
+/* Departure Date/Time */
+
+margin: 0 auto;
+width: 140px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+text-align: right;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 12;
+flex-grow: 0;
+z-index: 4;
+
+
+/* Time Stamp */
+
+margin: 0 auto;
+display: none;
+width: 80px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+text-align: right;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 13;
+flex-grow: 0;
+z-index: 3;
+
+
+/* Remarks */
+
+margin: 0 auto;
+display: none;
+width: 60px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 14;
+flex-grow: 0;
+z-index: 2;
+
+
+/* Guests */
+
+margin: 0 auto;
+display: none;
+width: 50px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 15;
+flex-grow: 0;
+z-index: 1;
+
+
+/* Total */
+
+margin: 0 auto;
+width: 50px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 16;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Waitlist Table FM Update */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 5px 20px;
+gap: 80px;
+isolation: isolate;
+
+width: 1424px;
+height: 40px;
+
+background: #FFFFFF;
+border: 1px solid #BFBFBF;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+margin: -1px 0px;
+
+
+/* 1 */
+
+margin: 0 auto;
+display: none;
+width: 52px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 16;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 56px;
+height: 14.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 15;
+
+
+/* check-in icon */
+
+width: 14.86px;
+height: 14.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 15.38%;
+right: 46.15%;
+top: 0%;
+bottom: 61.54%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 0%;
+right: 50%;
+top: 53.81%;
+bottom: 7.69%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 76.92%;
+right: 23.08%;
+top: 53.85%;
+bottom: 0%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 53.85%;
+right: 0%;
+top: 76.92%;
+bottom: 23.08%;
+
+border: 1px solid #007DBA;
+
+
+/* edit-2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 1px;
+gap: 10px;
+
+margin: 0 auto;
+width: 25px;
+height: 15.22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 14;
+
+
+/* Vector */
+
+width: 13.22px;
+height: 13.22px;
+
+border: 1px solid #007DBA;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* ringing-bell-notification--notification-vibrate-ring-sound-alarm-alert-bell-noise */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 1px;
+gap: 10px;
+
+margin: 0 auto;
+width: 38px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 13;
+
+
+/* bell alert */
+
+margin: 0 auto;
+width: 13px;
+height: 12.5px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 42.31%;
+right: 42.31%;
+top: 100%;
+bottom: 0%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 7.69%;
+right: 7.69%;
+top: 8%;
+bottom: 20%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 0%;
+right: 80.77%;
+top: 0%;
+bottom: 61.04%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 80.77%;
+right: 0%;
+top: 0%;
+bottom: 61.04%;
+
+border: 1px solid #007DBA;
+
+
+/* 4 min */
+
+margin: 0 auto;
+width: 65px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+z-index: 12;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 41px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+z-index: 11;
+
+
+/* trash icon hover */
+
+margin: 0 auto;
+width: 14px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 7.14%;
+right: 7.14%;
+top: 25%;
+bottom: 75%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+left: 40.48%;
+right: 59.52%;
+top: 45.83%;
+bottom: 29.17%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+width: 0px;
+height: 4px;
+left: 8.33px;
+top: 7.33px;
+
+border: 1px solid #BF211E;
+
+
+/* table staff web components */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 1px;
+gap: 2px;
+
+margin: 0 auto;
+width: 49px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+z-index: 10;
+
+
+/* heroicons-outline/device-phone-mobile */
+
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 6.25%;
+bottom: 6.25%;
+
+border: 1px solid #71757A;
+
+
+/* Self */
+
+width: 31px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* John Doe */
+
+margin: 0 auto;
+width: 180px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+flex-grow: 0;
+z-index: 9;
+
+
+/* 0 min */
+
+margin: 0 auto;
+width: 85px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+flex-grow: 0;
+z-index: 8;
+
+
+/* Priority Pass */
+
+margin: 0 auto;
+width: 104px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+flex-grow: 0;
+z-index: 7;
+
+
+/* LA182 */
+
+margin: 0 auto;
+width: 80px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 10;
+flex-grow: 0;
+z-index: 6;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 150px;
+height: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 11;
+flex-grow: 0;
+z-index: 5;
+
+
+/* Flight Status */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 4px 8px;
+gap: 4px;
+
+margin: 0 auto;
+width: 88px;
+height: 22px;
+
+background: #D2F2DD;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* circle-clock--clock-loading-measure-time-circle */
+
+width: 12px;
+height: 12px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* circle-clock--clock-loading-measure-time-circle */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+border: 1px solid #1A9944;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 50%;
+right: 31.86%;
+top: 32.14%;
+bottom: 28.86%;
+
+border: 1px solid #1A9944;
+
+
+/* Scheduled */
+
+width: 56px;
+height: 14px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Today 17:46 */
+
+margin: 0 auto;
+width: 140px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: right;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 12;
+flex-grow: 0;
+z-index: 4;
+
+
+/* 4 min */
+
+margin: 0 auto;
+display: none;
+width: 80px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 13;
+flex-grow: 0;
+z-index: 3;
+
+
+/* - */
+
+margin: 0 auto;
+display: none;
+width: 60px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 14;
+flex-grow: 0;
+z-index: 2;
+
+
+/* 0 */
+
+margin: 0 auto;
+display: none;
+width: 50px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 15;
+flex-grow: 0;
+z-index: 1;
+
+
+/* 1 */
+
+margin: 0 auto;
+width: 50px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 16;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Waitlist Table FM Update */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 5px 20px;
+gap: 80px;
+isolation: isolate;
+
+width: 1424px;
+height: 40px;
+
+background: #FFFFFF;
+border: 1px solid #BFBFBF;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+margin: -1px 0px;
+
+
+/* 1 */
+
+margin: 0 auto;
+display: none;
+width: 52px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 16;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 56px;
+height: 14.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 15;
+
+
+/* check-in icon */
+
+width: 14.86px;
+height: 14.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 15.38%;
+right: 46.15%;
+top: 0%;
+bottom: 61.54%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 0%;
+right: 50%;
+top: 53.81%;
+bottom: 7.69%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 76.92%;
+right: 23.08%;
+top: 53.85%;
+bottom: 0%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 53.85%;
+right: 0%;
+top: 76.92%;
+bottom: 23.08%;
+
+border: 1px solid #007DBA;
+
+
+/* edit-2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 1px;
+gap: 10px;
+
+margin: 0 auto;
+width: 25px;
+height: 15.22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 14;
+
+
+/* Vector */
+
+width: 13.22px;
+height: 13.22px;
+
+border: 1px solid #007DBA;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* ringing-bell-notification--notification-vibrate-ring-sound-alarm-alert-bell-noise */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 1px;
+gap: 10px;
+
+margin: 0 auto;
+width: 38px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 13;
+
+
+/* bell alert */
+
+margin: 0 auto;
+width: 13px;
+height: 12.5px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 42.31%;
+right: 42.31%;
+top: 100%;
+bottom: 0%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 7.69%;
+right: 7.69%;
+top: 8%;
+bottom: 20%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 0%;
+right: 80.77%;
+top: 0%;
+bottom: 61.04%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 80.77%;
+right: 0%;
+top: 0%;
+bottom: 61.04%;
+
+border: 1px solid #007DBA;
+
+
+/* 4 min */
+
+margin: 0 auto;
+width: 65px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+z-index: 12;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 41px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+z-index: 11;
+
+
+/* trash icon hover */
+
+margin: 0 auto;
+width: 14px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 7.14%;
+right: 7.14%;
+top: 25%;
+bottom: 75%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+left: 40.48%;
+right: 59.52%;
+top: 45.83%;
+bottom: 29.17%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+width: 0px;
+height: 4px;
+left: 8.33px;
+top: 7.33px;
+
+border: 1px solid #BF211E;
+
+
+/* table staff web components */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 1px;
+gap: 2px;
+
+margin: 0 auto;
+width: 49px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+z-index: 10;
+
+
+/* web--server-world-internet-earth-www-globe-worldwide-web-network */
+
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* web--server-world-internet-earth-www-globe-worldwide-web-network */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+border: 1px solid #71757A;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 50%;
+bottom: 50%;
+
+border: 1px solid #71757A;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 32.14%;
+right: 32.14%;
+top: 3.57%;
+bottom: 3.57%;
+
+border: 1px solid #71757A;
+
+
+/* Staff */
+
+width: 31px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* John Doe */
+
+margin: 0 auto;
+width: 180px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+flex-grow: 0;
+z-index: 9;
+
+
+/* 0 min */
+
+margin: 0 auto;
+width: 85px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+flex-grow: 0;
+z-index: 8;
+
+
+/* Priority Pass */
+
+margin: 0 auto;
+width: 104px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+flex-grow: 0;
+z-index: 7;
+
+
+/* LA182 */
+
+margin: 0 auto;
+width: 80px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 10;
+flex-grow: 0;
+z-index: 6;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 150px;
+height: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 11;
+flex-grow: 0;
+z-index: 5;
+
+
+/* Flight Status */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 4px 8px;
+gap: 4px;
+
+margin: 0 auto;
+width: 88px;
+height: 22px;
+
+background: #D2F2DD;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* circle-clock--clock-loading-measure-time-circle */
+
+width: 12px;
+height: 12px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* circle-clock--clock-loading-measure-time-circle */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+border: 1px solid #1A9944;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 50%;
+right: 31.86%;
+top: 32.14%;
+bottom: 28.86%;
+
+border: 1px solid #1A9944;
+
+
+/* Scheduled */
+
+width: 56px;
+height: 14px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Today 17:46 */
+
+margin: 0 auto;
+width: 140px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: right;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 12;
+flex-grow: 0;
+z-index: 4;
+
+
+/* 4 min */
+
+margin: 0 auto;
+display: none;
+width: 80px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 13;
+flex-grow: 0;
+z-index: 3;
+
+
+/* - */
+
+margin: 0 auto;
+display: none;
+width: 60px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 14;
+flex-grow: 0;
+z-index: 2;
+
+
+/* 0 */
+
+margin: 0 auto;
+display: none;
+width: 50px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 15;
+flex-grow: 0;
+z-index: 1;
+
+
+/* 1 */
+
+margin: 0 auto;
+width: 50px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 16;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Waitlist Table FM Update */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 5px 20px;
+gap: 80px;
+isolation: isolate;
+
+width: 1424px;
+height: 40px;
+
+background: #FFFFFF;
+border: 1px solid #BFBFBF;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+align-self: stretch;
+flex-grow: 0;
+margin: -1px 0px;
+
+
+/* 1 */
+
+margin: 0 auto;
+display: none;
+width: 52px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 16;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 56px;
+height: 14.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 15;
+
+
+/* check-in icon */
+
+width: 14.86px;
+height: 14.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 15.38%;
+right: 46.15%;
+top: 0%;
+bottom: 61.54%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 0%;
+right: 50%;
+top: 53.81%;
+bottom: 7.69%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 76.92%;
+right: 23.08%;
+top: 53.85%;
+bottom: 0%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 53.85%;
+right: 0%;
+top: 76.92%;
+bottom: 23.08%;
+
+border: 1px solid #007DBA;
+
+
+/* edit-2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 1px;
+gap: 10px;
+
+margin: 0 auto;
+width: 25px;
+height: 15.22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 14;
+
+
+/* Vector */
+
+width: 13.22px;
+height: 13.22px;
+
+border: 1px solid #007DBA;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* ringing-bell-notification--notification-vibrate-ring-sound-alarm-alert-bell-noise */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 1px;
+gap: 10px;
+
+margin: 0 auto;
+width: 38px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 13;
+
+
+/* bell alert */
+
+margin: 0 auto;
+width: 13px;
+height: 12.5px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 42.31%;
+right: 42.31%;
+top: 100%;
+bottom: 0%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 7.69%;
+right: 7.69%;
+top: 8%;
+bottom: 20%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 0%;
+right: 80.77%;
+top: 0%;
+bottom: 61.04%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 80.77%;
+right: 0%;
+top: 0%;
+bottom: 61.04%;
+
+border: 1px solid #007DBA;
+
+
+/* 4 min */
+
+margin: 0 auto;
+width: 65px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+z-index: 12;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 41px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+z-index: 11;
+
+
+/* trash icon hover */
+
+margin: 0 auto;
+width: 14px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 7.14%;
+right: 7.14%;
+top: 25%;
+bottom: 75%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+left: 40.48%;
+right: 59.52%;
+top: 45.83%;
+bottom: 29.17%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+width: 0px;
+height: 4px;
+left: 8.33px;
+top: 7.33px;
+
+border: 1px solid #BF211E;
+
+
+/* table staff web components */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 1px;
+gap: 2px;
+
+margin: 0 auto;
+width: 49px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+z-index: 10;
+
+
+/* web--server-world-internet-earth-www-globe-worldwide-web-network */
+
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* web--server-world-internet-earth-www-globe-worldwide-web-network */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+border: 1px solid #71757A;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 50%;
+bottom: 50%;
+
+border: 1px solid #71757A;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 32.14%;
+right: 32.14%;
+top: 3.57%;
+bottom: 3.57%;
+
+border: 1px solid #71757A;
+
+
+/* Staff */
+
+width: 31px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* John Doe */
+
+margin: 0 auto;
+width: 180px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+flex-grow: 0;
+z-index: 9;
+
+
+/* 0 min */
+
+margin: 0 auto;
+width: 85px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+flex-grow: 0;
+z-index: 8;
+
+
+/* Priority Pass */
+
+margin: 0 auto;
+width: 104px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+flex-grow: 0;
+z-index: 7;
+
+
+/* LA182 */
+
+margin: 0 auto;
+width: 80px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 10;
+flex-grow: 0;
+z-index: 6;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 150px;
+height: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 11;
+flex-grow: 0;
+z-index: 5;
+
+
+/* Flight Status */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 4px 8px;
+gap: 4px;
+
+margin: 0 auto;
+width: 88px;
+height: 22px;
+
+background: #D2F2DD;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* circle-clock--clock-loading-measure-time-circle */
+
+width: 12px;
+height: 12px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* circle-clock--clock-loading-measure-time-circle */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+border: 1px solid #1A9944;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 50%;
+right: 31.86%;
+top: 32.14%;
+bottom: 28.86%;
+
+border: 1px solid #1A9944;
+
+
+/* Scheduled */
+
+width: 56px;
+height: 14px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Today 17:46 */
+
+margin: 0 auto;
+width: 140px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: right;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 12;
+flex-grow: 0;
+z-index: 4;
+
+
+/* 4 min */
+
+margin: 0 auto;
+display: none;
+width: 80px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 13;
+flex-grow: 0;
+z-index: 3;
+
+
+/* - */
+
+margin: 0 auto;
+display: none;
+width: 60px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 14;
+flex-grow: 0;
+z-index: 2;
+
+
+/* 0 */
+
+margin: 0 auto;
+display: none;
+width: 50px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 15;
+flex-grow: 0;
+z-index: 1;
+
+
+/* 1 */
+
+margin: 0 auto;
+width: 50px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 16;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Waitlist Table FM Update */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 5px 20px;
+gap: 80px;
+isolation: isolate;
+
+width: 1424px;
+height: 40px;
+
+background: #FFFFFF;
+border: 1px solid #BFBFBF;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+margin: -1px 0px;
+
+
+/* 1 */
+
+margin: 0 auto;
+display: none;
+width: 52px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 16;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 56px;
+height: 14.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 15;
+
+
+/* check-in icon */
+
+width: 14.86px;
+height: 14.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 15.38%;
+right: 46.15%;
+top: 0%;
+bottom: 61.54%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 0%;
+right: 50%;
+top: 53.81%;
+bottom: 7.69%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 76.92%;
+right: 23.08%;
+top: 53.85%;
+bottom: 0%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 53.85%;
+right: 0%;
+top: 76.92%;
+bottom: 23.08%;
+
+border: 1px solid #007DBA;
+
+
+/* edit-2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 1px;
+gap: 10px;
+
+margin: 0 auto;
+width: 25px;
+height: 15.22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 14;
+
+
+/* Vector */
+
+width: 13.22px;
+height: 13.22px;
+
+border: 1px solid #007DBA;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* ringing-bell-notification--notification-vibrate-ring-sound-alarm-alert-bell-noise */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 1px;
+gap: 10px;
+
+margin: 0 auto;
+width: 38px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 13;
+
+
+/* bell alert */
+
+margin: 0 auto;
+width: 13px;
+height: 12.5px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 42.31%;
+right: 42.31%;
+top: 100%;
+bottom: 0%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 7.69%;
+right: 7.69%;
+top: 8%;
+bottom: 20%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 0%;
+right: 80.77%;
+top: 0%;
+bottom: 61.04%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 80.77%;
+right: 0%;
+top: 0%;
+bottom: 61.04%;
+
+border: 1px solid #007DBA;
+
+
+/* 4 min */
+
+margin: 0 auto;
+width: 65px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+z-index: 12;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 41px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+z-index: 11;
+
+
+/* trash icon hover */
+
+margin: 0 auto;
+width: 14px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 7.14%;
+right: 7.14%;
+top: 25%;
+bottom: 75%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+left: 40.48%;
+right: 59.52%;
+top: 45.83%;
+bottom: 29.17%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+width: 0px;
+height: 4px;
+left: 8.33px;
+top: 7.33px;
+
+border: 1px solid #BF211E;
+
+
+/* table staff web components */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 1px;
+gap: 2px;
+
+margin: 0 auto;
+width: 49px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+z-index: 10;
+
+
+/* heroicons-outline/device-phone-mobile */
+
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 6.25%;
+bottom: 6.25%;
+
+border: 1px solid #71757A;
+
+
+/* Self */
+
+width: 31px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* John Doe */
+
+margin: 0 auto;
+width: 180px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+flex-grow: 0;
+z-index: 9;
+
+
+/* 0 min */
+
+margin: 0 auto;
+width: 85px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+flex-grow: 0;
+z-index: 8;
+
+
+/* Priority Pass */
+
+margin: 0 auto;
+width: 104px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+flex-grow: 0;
+z-index: 7;
+
+
+/* LA182 */
+
+margin: 0 auto;
+width: 80px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 10;
+flex-grow: 0;
+z-index: 6;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 150px;
+height: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 11;
+flex-grow: 0;
+z-index: 5;
+
+
+/* Flight Status */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 4px 8px;
+gap: 4px;
+
+margin: 0 auto;
+width: 88px;
+height: 22px;
+
+background: #D2F2DD;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* circle-clock--clock-loading-measure-time-circle */
+
+width: 12px;
+height: 12px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* circle-clock--clock-loading-measure-time-circle */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+border: 1px solid #1A9944;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 50%;
+right: 31.86%;
+top: 32.14%;
+bottom: 28.86%;
+
+border: 1px solid #1A9944;
+
+
+/* Scheduled */
+
+width: 56px;
+height: 14px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Today 17:46 */
+
+margin: 0 auto;
+width: 140px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: right;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 12;
+flex-grow: 0;
+z-index: 4;
+
+
+/* 4 min */
+
+margin: 0 auto;
+display: none;
+width: 80px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 13;
+flex-grow: 0;
+z-index: 3;
+
+
+/* - */
+
+margin: 0 auto;
+display: none;
+width: 60px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 14;
+flex-grow: 0;
+z-index: 2;
+
+
+/* 0 */
+
+margin: 0 auto;
+display: none;
+width: 50px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 15;
+flex-grow: 0;
+z-index: 1;
+
+
+/* 1 */
+
+margin: 0 auto;
+width: 50px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 16;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Waitlist Table FM Update */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 5px 20px;
+gap: 80px;
+isolation: isolate;
+
+width: 1424px;
+height: 40px;
+
+background: #FFFFFF;
+border: 1px solid #BFBFBF;
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+align-self: stretch;
+flex-grow: 0;
+margin: -1px 0px;
+
+
+/* 1 */
+
+margin: 0 auto;
+display: none;
+width: 52px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 16;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 56px;
+height: 14.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 15;
+
+
+/* check-in icon */
+
+width: 14.86px;
+height: 14.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 15.38%;
+right: 46.15%;
+top: 0%;
+bottom: 61.54%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 0%;
+right: 50%;
+top: 53.81%;
+bottom: 7.69%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 76.92%;
+right: 23.08%;
+top: 53.85%;
+bottom: 0%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 53.85%;
+right: 0%;
+top: 76.92%;
+bottom: 23.08%;
+
+border: 1px solid #007DBA;
+
+
+/* edit-2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 1px;
+gap: 10px;
+
+margin: 0 auto;
+width: 25px;
+height: 15.22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 14;
+
+
+/* Vector */
+
+width: 13.22px;
+height: 13.22px;
+
+border: 1px solid #007DBA;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* ringing-bell-notification--notification-vibrate-ring-sound-alarm-alert-bell-noise */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 1px;
+gap: 10px;
+
+margin: 0 auto;
+width: 38px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 13;
+
+
+/* bell alert */
+
+margin: 0 auto;
+width: 13px;
+height: 12.5px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 42.31%;
+right: 42.31%;
+top: 100%;
+bottom: 0%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 7.69%;
+right: 7.69%;
+top: 8%;
+bottom: 20%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 0%;
+right: 80.77%;
+top: 0%;
+bottom: 61.04%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 80.77%;
+right: 0%;
+top: 0%;
+bottom: 61.04%;
+
+border: 1px solid #007DBA;
+
+
+/* 4 min */
+
+margin: 0 auto;
+width: 65px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+z-index: 12;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 41px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+z-index: 11;
+
+
+/* trash icon hover */
+
+margin: 0 auto;
+width: 14px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 7.14%;
+right: 7.14%;
+top: 25%;
+bottom: 75%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+left: 40.48%;
+right: 59.52%;
+top: 45.83%;
+bottom: 29.17%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+width: 0px;
+height: 4px;
+left: 8.33px;
+top: 7.33px;
+
+border: 1px solid #BF211E;
+
+
+/* table staff web components */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 1px;
+gap: 2px;
+
+margin: 0 auto;
+width: 49px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+z-index: 10;
+
+
+/* heroicons-outline/device-phone-mobile */
+
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 6.25%;
+bottom: 6.25%;
+
+border: 1px solid #71757A;
+
+
+/* Self */
+
+width: 31px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* John Doe */
+
+margin: 0 auto;
+width: 180px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+flex-grow: 0;
+z-index: 9;
+
+
+/* 0 min */
+
+margin: 0 auto;
+width: 85px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+flex-grow: 0;
+z-index: 8;
+
+
+/* Priority Pass */
+
+margin: 0 auto;
+width: 104px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+flex-grow: 0;
+z-index: 7;
+
+
+/* LA182 */
+
+margin: 0 auto;
+width: 80px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 10;
+flex-grow: 0;
+z-index: 6;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 150px;
+height: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 11;
+flex-grow: 0;
+z-index: 5;
+
+
+/* Flight Status */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 4px 8px;
+gap: 4px;
+
+margin: 0 auto;
+width: 86px;
+height: 22px;
+
+background: #F2D3D2;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* cancel-circle--button-remove-cross-add-buttons-plus-circle-+-mathematics-math */
+
+width: 12px;
+height: 12px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* add-circle--button-remove-cross-add-buttons-plus-circle-+-mathematics-math */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 35.71%;
+right: 34%;
+top: 35.71%;
+bottom: 34%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 35.71%;
+right: 34%;
+top: 35.71%;
+bottom: 34%;
+
+border: 1px solid #BF211E;
+
+
+/* Cancelled */
+
+width: 54px;
+height: 14px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Today 17:46 */
+
+margin: 0 auto;
+width: 140px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: right;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 12;
+flex-grow: 0;
+z-index: 4;
+
+
+/* 4 min */
+
+margin: 0 auto;
+display: none;
+width: 80px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 13;
+flex-grow: 0;
+z-index: 3;
+
+
+/* - */
+
+margin: 0 auto;
+display: none;
+width: 60px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 14;
+flex-grow: 0;
+z-index: 2;
+
+
+/* 0 */
+
+margin: 0 auto;
+display: none;
+width: 50px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 15;
+flex-grow: 0;
+z-index: 1;
+
+
+/* 1 */
+
+margin: 0 auto;
+width: 50px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 16;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Waitlist Table FM Update */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 5px 20px;
+gap: 80px;
+isolation: isolate;
+
+width: 1424px;
+height: 40px;
+
+background: #FFFFFF;
+border: 1px solid #BFBFBF;
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+align-self: stretch;
+flex-grow: 0;
+margin: -1px 0px;
+
+
+/* 1 */
+
+margin: 0 auto;
+display: none;
+width: 52px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 16;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 56px;
+height: 14.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 15;
+
+
+/* check-in icon */
+
+width: 14.86px;
+height: 14.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 15.38%;
+right: 46.15%;
+top: 0%;
+bottom: 61.54%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 0%;
+right: 50%;
+top: 53.81%;
+bottom: 7.69%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 76.92%;
+right: 23.08%;
+top: 53.85%;
+bottom: 0%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 53.85%;
+right: 0%;
+top: 76.92%;
+bottom: 23.08%;
+
+border: 1px solid #007DBA;
+
+
+/* edit-2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 1px;
+gap: 10px;
+
+margin: 0 auto;
+width: 25px;
+height: 15.22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 14;
+
+
+/* Vector */
+
+width: 13.22px;
+height: 13.22px;
+
+border: 1px solid #007DBA;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* ringing-bell-notification--notification-vibrate-ring-sound-alarm-alert-bell-noise */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 1px;
+gap: 10px;
+
+margin: 0 auto;
+width: 38px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 13;
+
+
+/* bell alert */
+
+margin: 0 auto;
+width: 13px;
+height: 12.5px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 42.31%;
+right: 42.31%;
+top: 100%;
+bottom: 0%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 7.69%;
+right: 7.69%;
+top: 8%;
+bottom: 20%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 0%;
+right: 80.77%;
+top: 0%;
+bottom: 61.04%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 80.77%;
+right: 0%;
+top: 0%;
+bottom: 61.04%;
+
+border: 1px solid #007DBA;
+
+
+/* 4 min */
+
+margin: 0 auto;
+width: 65px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+z-index: 12;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 41px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+z-index: 11;
+
+
+/* trash icon hover */
+
+margin: 0 auto;
+width: 14px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 7.14%;
+right: 7.14%;
+top: 25%;
+bottom: 75%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+left: 40.48%;
+right: 59.52%;
+top: 45.83%;
+bottom: 29.17%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+width: 0px;
+height: 4px;
+left: 8.33px;
+top: 7.33px;
+
+border: 1px solid #BF211E;
+
+
+/* table staff web components */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 1px;
+gap: 2px;
+
+margin: 0 auto;
+width: 49px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+z-index: 10;
+
+
+/* web--server-world-internet-earth-www-globe-worldwide-web-network */
+
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* web--server-world-internet-earth-www-globe-worldwide-web-network */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+border: 1px solid #71757A;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 50%;
+bottom: 50%;
+
+border: 1px solid #71757A;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 32.14%;
+right: 32.14%;
+top: 3.57%;
+bottom: 3.57%;
+
+border: 1px solid #71757A;
+
+
+/* Staff */
+
+width: 31px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* John Doe */
+
+margin: 0 auto;
+width: 180px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+flex-grow: 0;
+z-index: 9;
+
+
+/* 0 min */
+
+margin: 0 auto;
+width: 85px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+flex-grow: 0;
+z-index: 8;
+
+
+/* Priority Pass */
+
+margin: 0 auto;
+width: 104px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+flex-grow: 0;
+z-index: 7;
+
+
+/* LA182 */
+
+margin: 0 auto;
+width: 80px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 10;
+flex-grow: 0;
+z-index: 6;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 150px;
+height: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 11;
+flex-grow: 0;
+z-index: 5;
+
+
+/* Flight Status */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 4px 8px;
+gap: 4px;
+
+margin: 0 auto;
+width: 88px;
+height: 22px;
+
+background: #D2F2DD;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* circle-clock--clock-loading-measure-time-circle */
+
+width: 12px;
+height: 12px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* circle-clock--clock-loading-measure-time-circle */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+border: 1px solid #1A9944;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 50%;
+right: 31.86%;
+top: 32.14%;
+bottom: 28.86%;
+
+border: 1px solid #1A9944;
+
+
+/* Scheduled */
+
+width: 56px;
+height: 14px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Today 17:46 */
+
+margin: 0 auto;
+width: 140px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: right;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 12;
+flex-grow: 0;
+z-index: 4;
+
+
+/* 4 min */
+
+margin: 0 auto;
+display: none;
+width: 80px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 13;
+flex-grow: 0;
+z-index: 3;
+
+
+/* - */
+
+margin: 0 auto;
+display: none;
+width: 60px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 14;
+flex-grow: 0;
+z-index: 2;
+
+
+/* 0 */
+
+margin: 0 auto;
+display: none;
+width: 50px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 15;
+flex-grow: 0;
+z-index: 1;
+
+
+/* 1 */
+
+margin: 0 auto;
+width: 50px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 16;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Waitlist Table FM Update */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 5px 20px;
+gap: 80px;
+isolation: isolate;
+
+width: 1424px;
+height: 40px;
+
+background: #FFFFFF;
+border: 1px solid #BFBFBF;
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+align-self: stretch;
+flex-grow: 0;
+margin: -1px 0px;
+
+
+/* 1 */
+
+margin: 0 auto;
+display: none;
+width: 52px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 16;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 56px;
+height: 14.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 15;
+
+
+/* check-in icon */
+
+width: 14.86px;
+height: 14.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 15.38%;
+right: 46.15%;
+top: 0%;
+bottom: 61.54%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 0%;
+right: 50%;
+top: 53.81%;
+bottom: 7.69%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 76.92%;
+right: 23.08%;
+top: 53.85%;
+bottom: 0%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 53.85%;
+right: 0%;
+top: 76.92%;
+bottom: 23.08%;
+
+border: 1px solid #007DBA;
+
+
+/* edit-2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 1px;
+gap: 10px;
+
+margin: 0 auto;
+width: 25px;
+height: 15.22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 14;
+
+
+/* Vector */
+
+width: 13.22px;
+height: 13.22px;
+
+border: 1px solid #007DBA;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* ringing-bell-notification--notification-vibrate-ring-sound-alarm-alert-bell-noise */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 1px;
+gap: 10px;
+
+margin: 0 auto;
+width: 38px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 13;
+
+
+/* bell alert */
+
+margin: 0 auto;
+width: 13px;
+height: 12.5px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 42.31%;
+right: 42.31%;
+top: 100%;
+bottom: 0%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 7.69%;
+right: 7.69%;
+top: 8%;
+bottom: 20%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 0%;
+right: 80.77%;
+top: 0%;
+bottom: 61.04%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 80.77%;
+right: 0%;
+top: 0%;
+bottom: 61.04%;
+
+border: 1px solid #007DBA;
+
+
+/* 4 min */
+
+margin: 0 auto;
+width: 65px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+z-index: 12;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 41px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+z-index: 11;
+
+
+/* trash icon hover */
+
+margin: 0 auto;
+width: 14px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 7.14%;
+right: 7.14%;
+top: 25%;
+bottom: 75%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+left: 40.48%;
+right: 59.52%;
+top: 45.83%;
+bottom: 29.17%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+width: 0px;
+height: 4px;
+left: 8.33px;
+top: 7.33px;
+
+border: 1px solid #BF211E;
+
+
+/* table staff web components */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 1px;
+gap: 2px;
+
+margin: 0 auto;
+width: 49px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+z-index: 10;
+
+
+/* heroicons-outline/device-phone-mobile */
+
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 25%;
+right: 25%;
+top: 6.25%;
+bottom: 6.25%;
+
+border: 1px solid #71757A;
+
+
+/* Self */
+
+width: 31px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* John Doe */
+
+margin: 0 auto;
+width: 180px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+flex-grow: 0;
+z-index: 9;
+
+
+/* 0 min */
+
+margin: 0 auto;
+width: 85px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+flex-grow: 0;
+z-index: 8;
+
+
+/* Priority Pass */
+
+margin: 0 auto;
+width: 104px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+flex-grow: 0;
+z-index: 7;
+
+
+/* LA182 */
+
+margin: 0 auto;
+width: 80px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 10;
+flex-grow: 0;
+z-index: 6;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 150px;
+height: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 11;
+flex-grow: 0;
+z-index: 5;
+
+
+/* Flight Status */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 4px 8px;
+gap: 4px;
+
+margin: 0 auto;
+width: 88px;
+height: 22px;
+
+background: #D2F2DD;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* circle-clock--clock-loading-measure-time-circle */
+
+width: 12px;
+height: 12px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* circle-clock--clock-loading-measure-time-circle */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+border: 1px solid #1A9944;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 50%;
+right: 31.86%;
+top: 32.14%;
+bottom: 28.86%;
+
+border: 1px solid #1A9944;
+
+
+/* Scheduled */
+
+width: 56px;
+height: 14px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Today 17:46 */
+
+margin: 0 auto;
+width: 140px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: right;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 12;
+flex-grow: 0;
+z-index: 4;
+
+
+/* 4 min */
+
+margin: 0 auto;
+display: none;
+width: 80px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 13;
+flex-grow: 0;
+z-index: 3;
+
+
+/* - */
+
+margin: 0 auto;
+display: none;
+width: 60px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 14;
+flex-grow: 0;
+z-index: 2;
+
+
+/* 0 */
+
+margin: 0 auto;
+display: none;
+width: 50px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 15;
+flex-grow: 0;
+z-index: 1;
+
+
+/* 1 */
+
+margin: 0 auto;
+width: 50px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 16;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Waitlist Table FM Update */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 5px 20px;
+gap: 80px;
+isolation: isolate;
+
+width: 1424px;
+height: 40px;
+
+background: #FFFFFF;
+border: 1px solid #BFBFBF;
+border-radius: 0px 0px 8px 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* 1 */
+
+margin: 0 auto;
+display: none;
+width: 52px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 16;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 56px;
+height: 14.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+z-index: 15;
+
+
+/* check-in icon */
+
+width: 14.86px;
+height: 14.86px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 15.38%;
+right: 46.15%;
+top: 0%;
+bottom: 61.54%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 0%;
+right: 50%;
+top: 53.81%;
+bottom: 7.69%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 76.92%;
+right: 23.08%;
+top: 53.85%;
+bottom: 0%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 53.85%;
+right: 0%;
+top: 76.92%;
+bottom: 23.08%;
+
+border: 1px solid #007DBA;
+
+
+/* edit-2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 1px;
+gap: 10px;
+
+margin: 0 auto;
+width: 25px;
+height: 15.22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 14;
+
+
+/* Vector */
+
+width: 13.22px;
+height: 13.22px;
+
+border: 1px solid #007DBA;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* ringing-bell-notification--notification-vibrate-ring-sound-alarm-alert-bell-noise */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 1px;
+gap: 10px;
+
+margin: 0 auto;
+width: 38px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 13;
+
+
+/* bell alert */
+
+margin: 0 auto;
+width: 13px;
+height: 12.5px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 42.31%;
+right: 42.31%;
+top: 100%;
+bottom: 0%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 7.69%;
+right: 7.69%;
+top: 8%;
+bottom: 20%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 0%;
+right: 80.77%;
+top: 0%;
+bottom: 61.04%;
+
+border: 1px solid #007DBA;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 80.77%;
+right: 0%;
+top: 0%;
+bottom: 61.04%;
+
+border: 1px solid #007DBA;
+
+
+/* – */
+
+margin: 0 auto;
+width: 65px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+z-index: 12;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 41px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+z-index: 11;
+
+
+/* trash icon hover */
+
+margin: 0 auto;
+width: 14px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 7.14%;
+right: 7.14%;
+top: 25%;
+bottom: 75%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 8.33%;
+bottom: 8.33%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+left: 40.48%;
+right: 59.52%;
+top: 45.83%;
+bottom: 29.17%;
+
+border: 1px solid #BF211E;
+
+
+/* Vector */
+
+position: absolute;
+width: 0px;
+height: 4px;
+left: 8.33px;
+top: 7.33px;
+
+border: 1px solid #BF211E;
+
+
+/* table staff web components */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 1px;
+gap: 4px;
+
+margin: 0 auto;
+width: 51px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+z-index: 10;
+
+
+/* web--server-world-internet-earth-www-globe-worldwide-web-network */
+
+width: 14px;
+height: 14px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* web--server-world-internet-earth-www-globe-worldwide-web-network */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+border: 1px solid #71757A;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 50%;
+bottom: 50%;
+
+border: 1px solid #71757A;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 32.14%;
+right: 32.14%;
+top: 3.57%;
+bottom: 3.57%;
+
+border: 1px solid #71757A;
+
+
+/* Staff */
+
+width: 31px;
+height: 14px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Jane Deanings */
+
+margin: 0 auto;
+width: 180px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+flex-grow: 0;
+z-index: 9;
+
+
+/* 2 min */
+
+margin: 0 auto;
+width: 85px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+flex-grow: 0;
+z-index: 8;
+
+
+/* LoungeKey */
+
+margin: 0 auto;
+width: 104px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+flex-grow: 0;
+z-index: 7;
+
+
+/* AA182 */
+
+margin: 0 auto;
+width: 80px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 10;
+flex-grow: 0;
+z-index: 6;
+
+
+/* Frame */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+margin: 0 auto;
+width: 150px;
+height: 22px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 11;
+flex-grow: 0;
+z-index: 5;
+
+
+/* Flight Status */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 4px 8px;
+gap: 4px;
+
+margin: 0 auto;
+width: 75px;
+height: 22px;
+
+background: #FCE9CC;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* circle-clock--clock-loading-measure-time-circle */
+
+width: 12px;
+height: 12px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* circle-clock--clock-loading-measure-time-circle */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+border: 1px solid #F18F01;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 50%;
+right: 31.86%;
+top: 32.14%;
+bottom: 28.86%;
+
+border: 1px solid #F18F01;
+
+
+/* Delayed */
+
+width: 43px;
+height: 14px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+/* identical to box height */
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Tomorrow 17:46 */
+
+margin: 0 auto;
+width: 140px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: right;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 12;
+flex-grow: 0;
+z-index: 4;
+
+
+/* 2 min */
+
+margin: 0 auto;
+display: none;
+width: 80px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 13;
+flex-grow: 0;
+z-index: 3;
+
+
+/* - */
+
+margin: 0 auto;
+display: none;
+width: 60px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 14;
+flex-grow: 0;
+z-index: 2;
+
+
+/* 2 */
+
+margin: 0 auto;
+display: none;
+width: 50px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 15;
+flex-grow: 0;
+z-index: 1;
+
+
+/* 3 */
+
+margin: 0 auto;
+width: 50px;
+height: 16px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+text-align: center;
+
+color: #212428;
+
+
+/* Inside auto layout */
+flex: none;
+order: 16;
+flex-grow: 0;
+z-index: 0;
+
+
+/* Component */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 56px;
+height: 56px;
+left: calc(50% - 56px/2 + 796px);
+top: calc(50% - 56px/2 + 507.5px);
+
+
+
+/* Support Ticket Button */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px;
+gap: 8px;
+
+width: 56px;
+height: 56px;
+
+background: #0B584F;
+box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.17);
+border-radius: 40px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* customer-support-1--customer-headset-help-microphone-phone-support */
+
+width: 16px;
+height: 16px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* customer-support-1--customer-headset-help-microphone-phone-support */
+
+position: absolute;
+left: 3.57%;
+right: 3.57%;
+top: 3.57%;
+bottom: 3.57%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 21.43%;
+right: 21.43%;
+top: 3.57%;
+bottom: 50%;
+
+border: 1px solid #CFE6E4;
+
+
+/* Vector_2 */
+
+position: absolute;
+left: 3.57%;
+right: 78.57%;
+top: 39.29%;
+bottom: 32.14%;
+
+border: 1px solid #CFE6E4;
+
+
+/* Vector_3 */
+
+position: absolute;
+left: 78.57%;
+right: 3.57%;
+top: 39.29%;
+bottom: 32.14%;
+
+border: 1px solid #CFE6E4;
+
+
+/* Vector_4 */
+
+position: absolute;
+left: 64.29%;
+right: 21.43%;
+top: 57.14%;
+bottom: 12.5%;
+
+border: 1px solid #CFE6E4;
+
+
+/* Vector_5 */
+
+position: absolute;
+left: 35.71%;
+right: 35.71%;
+top: 78.57%;
+bottom: 3.57%;
+
+border: 1px solid #CFE6E4;
+
+
+/* Create Support Ticket */
+
+display: none;
+width: 156px;
+height: 19px;
+
+/* button */
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+color: #CFE6E4;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
