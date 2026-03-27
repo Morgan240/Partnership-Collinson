@@ -47,25 +47,15 @@ jobs:
           aws s3 cp dist/index.html s3://${{ secrets.S3_BUCKET }}/index.html \
             --cache-control "no-cache, no-store, must-revalidate"
 
-      - name: Configure CloudFront SPA fallback
+      - name: Deploy SPA fallback for /LMS routes
         run: |
-          DIST_ID="${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}"
-          # Get current config and ETag
-          aws cloudfront get-distribution-config --id "$DIST_ID" > /tmp/cf-full.json
-          ETAG=$(jq -r '.ETag' /tmp/cf-full.json)
-          # Inject custom error responses for SPA routing (403/404 → index.html)
-          jq '.DistributionConfig.CustomErrorResponses = {
-            "Quantity": 2,
-            "Items": [
-              {"ErrorCode": 403, "ResponsePagePath": "/index.html", "ResponseCode": "200", "ErrorCachingMinTTL": 0},
-              {"ErrorCode": 404, "ResponsePagePath": "/index.html", "ResponseCode": "200", "ErrorCachingMinTTL": 0}
-            ]
-          }' /tmp/cf-full.json | jq '.DistributionConfig' > /tmp/cf-update.json
-          # Apply updated config
-          aws cloudfront update-distribution \
-            --id "$DIST_ID" \
-            --if-match "$ETAG" \
-            --distribution-config file:///tmp/cf-update.json
+          # Copy index.html to SPA route paths so CloudFront/S3 serves the React app
+          aws s3 cp dist/index.html s3://${{ secrets.S3_BUCKET }}/LMS/index.html \
+            --cache-control "no-cache, no-store, must-revalidate"
+          aws s3 cp dist/index.html s3://${{ secrets.S3_BUCKET }}/LMS/login/index.html \
+            --cache-control "no-cache, no-store, must-revalidate"
+          aws s3 cp dist/index.html s3://${{ secrets.S3_BUCKET }}/LMS/waitlist/index.html \
+            --cache-control "no-cache, no-store, must-revalidate"
 
       - name: Invalidate CloudFront cache
         run: |
