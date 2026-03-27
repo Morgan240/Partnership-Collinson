@@ -16,8 +16,8 @@ import type { Scenario, WaitlistEntry, LoungeState } from '../engine/types';
 
 export const SCENARIO_SPREADSHEET: Scenario = {
   id: 'spreadsheet-v2',
-  name: 'Simulation v.2 (Validação)',
-  description: '6 grupos da aba Simulation v.2 da planilha. Ocupação média, modo Balanced. Usado para validar o engine contra os resultados conhecidos.',
+  name: 'Demo Lounge (Validation)',
+  description: '6 grupos, ocupação média, modo Balanced. Usado para validar o engine contra os resultados conhecidos.',
   lounge_state: {
     available_seats: 10,
     max_capacity: 50,
@@ -140,8 +140,8 @@ export const MEX22_WAITLIST_RAW: WaitlistRow[] = [
 
 export const SCENARIO_MEX22_TOYSTORY: Scenario = {
   id: 'mex22-toystory',
-  name: 'MEX22 Real Data (Toy Story)',
-  description: 'Dados reais do lounge MEX22, 27-Mar-2026 ~14:18. 13 passageiros únicos na waitlist, 7 com voos já partidos. Esperas de até 248 min. O caos que o PriModel resolve.',
+  name: "Andy's Lounge (Toy Story)",
+  description: '13 passageiros únicos na waitlist, 7 com voos já partidos. Esperas de até 248 min. O caos que o PriModel resolve.',
   lounge_state: {
     available_seats: 4,
     max_capacity: 80,
@@ -221,8 +221,8 @@ export const MEX22_FLIGHTS: Record<number, { flight: string; destination: string
 
 export const SCENARIO_MEX22_DRAGONBALL: Scenario = {
   id: 'mex22-dragonball',
-  name: 'MEX22 Peak Hour (Dragon Ball)',
-  description: 'Cenário hipotético de hora pico no MEX22. Todos os voos ativos. 8 grupos competindo por 3 assentos. Goku tem MAX WAIT override (62 min).',
+  name: 'Capsule Corp Lounge (Dragon Ball)',
+  description: 'Hora pico, todos os voos ativos. 8 grupos competindo por 3 assentos. Goku tem MAX WAIT override (62 min).',
   lounge_state: {
     available_seats: 3,
     max_capacity: 80,
@@ -259,7 +259,7 @@ export const DRAGONBALL_NAMES: Record<number, string> = {
 
 export const SCENARIO_TC1_CAPACITY: Scenario = {
   id: 'tc1-capacity',
-  name: 'Test Case 1: Capacity Efficiency',
+  name: 'Test Lab — Capacity Efficiency',
   description: '3 assentos, Balanced. Solo vs couple vs grupo de 3. Gap de capacidade de 22x torna receita irrelevante.',
   lounge_state: { available_seats: 3, max_capacity: 50, current_headcount: 35, occupancy_level: 'medium' },
   entries: [
@@ -272,7 +272,7 @@ export const SCENARIO_TC1_CAPACITY: Scenario = {
 
 export const SCENARIO_TC2_FAIRNESS: Scenario = {
   id: 'tc2-fairness',
-  name: 'Test Case 2: Fairness Multiplier',
+  name: 'Test Lab — Fairness Multiplier',
   description: '4 assentos, Balanced. Grupos esperando 35-40 min vs 5 min. Gap de 7x em fairness.',
   lounge_state: { available_seats: 4, max_capacity: 50, current_headcount: 30, occupancy_level: 'medium' },
   entries: [
@@ -285,7 +285,7 @@ export const SCENARIO_TC2_FAIRNESS: Scenario = {
 
 export const SCENARIO_TC5_GRU: Scenario = {
   id: 'tc5-gru-peak',
-  name: 'Test Case 5: Peak GRU',
+  name: 'Test Lab — Peak Throughput',
   description: '95% ocupação, 2 assentos, Efficiency Focus. 4 solos reciclam 2 assentos em 45 min.',
   lounge_state: { available_seats: 2, max_capacity: 50, current_headcount: 48, occupancy_level: 'high' },
   entries: [

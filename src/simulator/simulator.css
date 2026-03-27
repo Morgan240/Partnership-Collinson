@@ -1,0 +1,690 @@
+/* PriModel Simulator - LMS Design System Tokens */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* ========== LMS Design Tokens ========== */
+:root {
+  /* Nav */
+  --lms-nav-height: 70px;
+  --lms-sidebar-width: 75px;
+  --lms-nav-bg: #002D51;
+
+  /* Backgrounds */
+  --lms-content-bg: #F7F7F7;
+  --lms-form-bg: #CCE5F1;
+  --lms-table-header-bg: #CCE5F1;
+  --lms-table-row-bg: #FFFFFF;
+
+  /* Borders */
+  --lms-form-border: #80BDDC;
+  --lms-table-header-border: #80BDDC;
+  --lms-table-row-border: #BFBFBF;
+
+  /* Text */
+  --lms-text-dark: #212428;
+  --lms-text-medium: #4B4F54;
+  --lms-text-light: #71757A;
+  --lms-text-white: #FFFFFF;
+
+  /* Interactive */
+  --lms-interactive: #007DBA;
+  --lms-primary: #CE0058;
+  --lms-primary-hover: #B5004E;
+  --lms-teal: #108476;
+
+  /* Flight Status */
+  --lms-status-scheduled-bg: #D2F2DD;
+  --lms-status-scheduled-text: #1A9944;
+  --lms-status-delayed-bg: #FCE9CC;
+  --lms-status-delayed-text: #F18F01;
+  --lms-status-departed-bg: #F2D3D2;
+  --lms-status-departed-text: #BF211E;
+  --lms-status-cancelled-bg: #F2D3D2;
+  --lms-status-cancelled-text: #BF211E;
+  --lms-status-notfound-bg: #CCD7E0;
+  --lms-status-notfound-text: #4B4F54;
+  --lms-status-unknown-bg: #E5E5EA;
+  --lms-status-unknown-text: #71757A;
+
+  /* Sizing */
+  --lms-table-header-height: 44px;
+  --lms-table-row-height: 40px;
+  --lms-button-height: 48px;
+  --lms-radius: 4px;
+  --lms-radius-lg: 8px;
+  --lms-badge-radius: 14px;
+}
+
+/* ========== Simulator Shell ========== */
+.sim-shell {
+  font-family: 'Roboto', sans-serif;
+  color: var(--lms-text-dark);
+  background: var(--lms-content-bg);
+  min-height: 100vh;
+}
+
+/* Top Nav */
+.sim-topnav {
+  height: var(--lms-nav-height);
+  background: var(--lms-nav-bg);
+  color: var(--lms-text-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+
+.sim-topnav__logo {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sim-topnav__title {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.85;
+}
+
+.sim-topnav__right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+}
+
+/* Sidebar */
+.sim-sidebar {
+  position: fixed;
+  top: var(--lms-nav-height);
+  left: 0;
+  bottom: 0;
+  width: var(--lms-sidebar-width);
+  background: #FFFFFF;
+  border-right: 1px solid #E5E5EA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 16px;
+  gap: 8px;
+  z-index: 40;
+}
+
+.sim-sidebar__item {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--lms-radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--lms-text-light);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.sim-sidebar__item:hover,
+.sim-sidebar__item--active {
+  background: var(--lms-form-bg);
+  color: var(--lms-interactive);
+}
+
+/* Main Content */
+.sim-content {
+  margin-left: var(--lms-sidebar-width);
+  margin-top: var(--lms-nav-height);
+  padding: 24px;
+  min-height: calc(100vh - var(--lms-nav-height));
+}
+
+/* ========== Control Panel ========== */
+.sim-control-panel {
+  background: var(--lms-form-bg);
+  border: 1px solid var(--lms-form-border);
+  border-radius: var(--lms-radius-lg);
+  padding: 20px 24px;
+  margin-bottom: 24px;
+}
+
+.sim-control-panel__row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.sim-control-panel__row + .sim-control-panel__row {
+  margin-top: 16px;
+}
+
+.sim-control-panel__label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--lms-text-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+/* ========== Tables ========== */
+.sim-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 14px;
+}
+
+.sim-table thead th {
+  background: var(--lms-table-header-bg);
+  border-bottom: 2px solid var(--lms-table-header-border);
+  height: var(--lms-table-header-height);
+  padding: 0 12px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: var(--lms-text-medium);
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+}
+
+.sim-table thead th:first-child {
+  border-radius: var(--lms-radius-lg) 0 0 0;
+}
+
+.sim-table thead th:last-child {
+  border-radius: 0 var(--lms-radius-lg) 0 0;
+}
+
+.sim-table tbody tr {
+  background: var(--lms-table-row-bg);
+  border-bottom: 1px solid var(--lms-table-row-border);
+  transition: background 0.1s ease;
+}
+
+.sim-table tbody tr:hover {
+  background: #F0F7FB;
+}
+
+.sim-table tbody tr:last-child td:first-child {
+  border-radius: 0 0 0 var(--lms-radius-lg);
+}
+
+.sim-table tbody tr:last-child td:last-child {
+  border-radius: 0 0 var(--lms-radius-lg) 0;
+}
+
+.sim-table tbody td {
+  height: var(--lms-table-row-height);
+  padding: 0 12px;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--lms-table-row-border);
+}
+
+/* Row highlight for #1 rank */
+.sim-table tbody tr.sim-table__row--top {
+  background: #FFF5F8;
+  border-left: 3px solid var(--lms-primary);
+}
+
+.sim-table tbody tr.sim-table__row--top:hover {
+  background: #FFE8EF;
+}
+
+/* Clickable rows */
+.sim-table tbody tr.sim-table__row--clickable {
+  cursor: pointer;
+}
+
+/* Sort indicator */
+.sim-table thead th .sort-arrow {
+  margin-left: 4px;
+  font-size: 10px;
+  opacity: 0.5;
+}
+
+.sim-table thead th.sorted .sort-arrow {
+  opacity: 1;
+}
+
+/* ========== Badges ========== */
+.sim-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: var(--lms-badge-radius);
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  line-height: 24px;
+}
+
+.sim-badge--scheduled   { background: var(--lms-status-scheduled-bg); color: var(--lms-status-scheduled-text); }
+.sim-badge--delayed     { background: var(--lms-status-delayed-bg);   color: var(--lms-status-delayed-text); }
+.sim-badge--departed    { background: var(--lms-status-departed-bg);  color: var(--lms-status-departed-text); }
+.sim-badge--cancelled   { background: var(--lms-status-cancelled-bg); color: var(--lms-status-cancelled-text); }
+.sim-badge--notfound    { background: var(--lms-status-notfound-bg);  color: var(--lms-status-notfound-text); }
+.sim-badge--unknown     { background: var(--lms-status-unknown-bg);   color: var(--lms-status-unknown-text); }
+
+.sim-badge--maxwait {
+  background: #BF211E;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+/* ========== Score Bar ========== */
+.sim-score-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sim-score-bar__track {
+  width: 80px;
+  height: 6px;
+  background: #E5E5EA;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.sim-score-bar__fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.sim-score-bar__value {
+  font-size: 13px;
+  font-weight: 500;
+  min-width: 36px;
+}
+
+/* ========== Mode Selector ========== */
+.sim-mode-selector {
+  display: flex;
+  gap: 8px;
+}
+
+.sim-mode-btn {
+  padding: 8px 16px;
+  border-radius: var(--lms-radius);
+  border: 1px solid var(--lms-table-row-border);
+  background: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--lms-text-medium);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.sim-mode-btn:hover {
+  border-color: var(--lms-interactive);
+  color: var(--lms-interactive);
+}
+
+.sim-mode-btn--active {
+  background: var(--lms-nav-bg);
+  color: var(--lms-text-white);
+  border-color: var(--lms-nav-bg);
+}
+
+.sim-mode-btn--custom {
+  border-style: dashed;
+}
+
+.sim-mode-btn--custom.sim-mode-btn--active {
+  background: var(--lms-teal);
+  border-color: var(--lms-teal);
+  border-style: solid;
+}
+
+/* ========== Weight Sliders ========== */
+.sim-weights {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sim-weight-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sim-weight-item__label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--lms-text-medium);
+  min-width: 28px;
+}
+
+.sim-weight-item input[type="range"] {
+  width: 100px;
+  height: 4px;
+  -webkit-appearance: none;
+  appearance: none;
+  background: #E5E5EA;
+  border-radius: 2px;
+  outline: none;
+}
+
+.sim-weight-item input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--lms-nav-bg);
+  cursor: pointer;
+}
+
+.sim-weight-item__value {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--lms-text-dark);
+  min-width: 32px;
+  text-align: right;
+}
+
+.sim-weights__sum {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: var(--lms-radius);
+}
+
+.sim-weights__sum--valid {
+  background: var(--lms-status-scheduled-bg);
+  color: var(--lms-status-scheduled-text);
+}
+
+.sim-weights__sum--invalid {
+  background: var(--lms-status-departed-bg);
+  color: var(--lms-status-departed-text);
+}
+
+/* ========== Occupancy Indicator ========== */
+.sim-occupancy {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sim-occupancy__bar {
+  width: 140px;
+  height: 8px;
+  background: #E5E5EA;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.sim-occupancy__fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.sim-occupancy__fill--low { background: var(--lms-status-scheduled-text); }
+.sim-occupancy__fill--medium { background: var(--lms-status-delayed-text); }
+.sim-occupancy__fill--high { background: var(--lms-status-departed-text); }
+
+.sim-occupancy__label {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.sim-occupancy__detail {
+  font-size: 12px;
+  color: var(--lms-text-light);
+}
+
+/* ========== Score Breakdown ========== */
+.sim-breakdown {
+  background: #FFFFFF;
+  border: 1px solid var(--lms-form-border);
+  border-radius: var(--lms-radius-lg);
+  padding: 20px 24px;
+  margin: 16px 0;
+  animation: slideDown 0.2s ease;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.sim-breakdown__header {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--lms-text-dark);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sim-breakdown__dimension {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.sim-breakdown__dim-label {
+  font-size: 13px;
+  font-weight: 500;
+  min-width: 70px;
+  color: var(--lms-text-medium);
+}
+
+.sim-breakdown__dim-bar {
+  flex: 1;
+  max-width: 240px;
+  height: 10px;
+  background: #E5E5EA;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.sim-breakdown__dim-fill {
+  height: 100%;
+  border-radius: 5px;
+  transition: width 0.4s ease;
+}
+
+.sim-breakdown__dim-fill--capacity { background: var(--lms-interactive); }
+.sim-breakdown__dim-fill--fairness { background: var(--lms-teal); }
+.sim-breakdown__dim-fill--urgency  { background: var(--lms-status-delayed-text); }
+
+.sim-breakdown__dim-value {
+  font-size: 14px;
+  font-weight: 700;
+  min-width: 48px;
+  text-align: right;
+}
+
+.sim-breakdown__formula {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #E5E5EA;
+  font-size: 13px;
+  color: var(--lms-text-medium);
+  font-family: 'Roboto Mono', monospace;
+}
+
+.sim-breakdown__formula strong {
+  color: var(--lms-text-dark);
+  font-weight: 700;
+}
+
+/* ========== Scenario Selector ========== */
+.sim-select {
+  padding: 8px 12px;
+  border: 1px solid var(--lms-form-border);
+  border-radius: var(--lms-radius);
+  background: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: var(--lms-text-dark);
+  min-width: 240px;
+  cursor: pointer;
+}
+
+.sim-select:focus {
+  outline: 2px solid var(--lms-interactive);
+  outline-offset: 1px;
+}
+
+/* ========== Login Page ========== */
+.sim-login {
+  min-height: 100vh;
+  background: var(--lms-nav-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sim-login__card {
+  background: #FFFFFF;
+  border-radius: var(--lms-radius-lg);
+  padding: 48px 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.sim-login__logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--lms-nav-bg);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.sim-login__subtitle {
+  font-size: 14px;
+  color: var(--lms-text-light);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.sim-login__field {
+  margin-bottom: 20px;
+}
+
+.sim-login__field label {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--lms-text-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.sim-login__field input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--lms-form-border);
+  border-radius: var(--lms-radius);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: var(--lms-text-dark);
+  box-sizing: border-box;
+}
+
+.sim-login__field input:focus {
+  outline: 2px solid var(--lms-interactive);
+  outline-offset: 1px;
+}
+
+.sim-login__btn {
+  width: 100%;
+  height: var(--lms-button-height);
+  background: var(--lms-primary);
+  color: var(--lms-text-white);
+  border: none;
+  border-radius: var(--lms-radius);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.sim-login__btn:hover {
+  background: var(--lms-primary-hover);
+}
+
+.sim-login__btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.sim-login__error {
+  color: var(--lms-status-departed-text);
+  font-size: 13px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* ========== Section Headers ========== */
+.sim-section-header {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--lms-text-dark);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ========== Rank Cell ========== */
+.sim-rank {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--lms-text-dark);
+}
+
+.sim-rank--top {
+  color: var(--lms-primary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ========== Logout Button ========== */
+.sim-logout-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--lms-text-white);
+  padding: 6px 14px;
+  border-radius: var(--lms-radius);
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.sim-logout-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ========== Responsive ========== */
+@media (max-width: 1024px) {
+  .sim-sidebar { display: none; }
+  .sim-content { margin-left: 0; }
+}
