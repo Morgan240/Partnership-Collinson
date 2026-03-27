@@ -30,36 +30,75 @@ export const WaitlistPage: React.FC = () => {
 
   return (
     <div>
-      {/* Control Panel */}
-      <div className="sim-control-panel">
-        <div className="sim-control-panel__row">
-          <ScenarioSelector
-            scenarios={scenarios}
-            activeId={scenario.id}
-            onChange={changeScenario}
-          />
-          <div style={{ flex: 1 }}>
-            <div className="sim-control-panel__label">Occupancy</div>
-            <OccupancyIndicator loungeState={scenario.lounge_state} />
-          </div>
-        </div>
-
-        <div className="sim-control-panel__row">
-          <div style={{ flex: 1 }}>
-            <ModeSelector
-              activeMode={mode}
-              weights={weights}
-              onModeChange={changeMode}
-              onWeightChange={changeWeight}
+      {/* Control Panel + Formula */}
+      <div style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
+        <div className="sim-control-panel" style={{ flex: 1 }}>
+          <div className="sim-control-panel__row">
+            <ScenarioSelector
+              scenarios={scenarios}
+              activeId={scenario.id}
+              onChange={changeScenario}
             />
+            <div style={{ flex: 1 }}>
+              <div className="sim-control-panel__label">Occupancy</div>
+              <OccupancyIndicator loungeState={scenario.lounge_state} />
+            </div>
           </div>
+
+          <div className="sim-control-panel__row">
+            <div style={{ flex: 1 }}>
+              <ModeSelector
+                activeMode={mode}
+                weights={weights}
+                onModeChange={changeMode}
+                onWeightChange={changeWeight}
+              />
+            </div>
+          </div>
+
+          {scenario.description && (
+            <div style={{ marginTop: 12, fontSize: 12, color: 'var(--lms-text-light)', fontStyle: 'italic' }}>
+              {scenario.description}
+            </div>
+          )}
         </div>
 
-        {scenario.description && (
-          <div style={{ marginTop: 12, fontSize: 12, color: 'var(--lms-text-light)', fontStyle: 'italic' }}>
-            {scenario.description}
+        {/* Formula Card */}
+        <div className="sim-formula-card">
+          <div className="sim-formula-card__title">PriModel v.2 — 3 Dimensions</div>
+          <div className="sim-formula-card__equation">
+            <span className="sim-formula-card__label">PriorityScore</span>
+            <span className="sim-formula-card__eq">=</span>
+            <span className="sim-formula-card__term sim-formula-card__term--cap">
+              W1<span className="sim-formula-card__times">×</span>Capacity
+            </span>
+            <span className="sim-formula-card__plus">+</span>
+            <span className="sim-formula-card__term sim-formula-card__term--fair">
+              W2<span className="sim-formula-card__times">×</span>Fairness
+            </span>
+            <span className="sim-formula-card__plus">+</span>
+            <span className="sim-formula-card__term sim-formula-card__term--urg">
+              W3<span className="sim-formula-card__times">×</span>Urgency
+            </span>
           </div>
-        )}
+          <div className="sim-formula-card__weights">
+            <div className="sim-formula-card__weight">
+              <span className="sim-formula-card__dot sim-formula-card__dot--cap" />
+              W1 Cap = {weights.w1_capacity.toFixed(2)}
+            </div>
+            <div className="sim-formula-card__weight">
+              <span className="sim-formula-card__dot sim-formula-card__dot--fair" />
+              W2 Fair = {weights.w2_fairness.toFixed(2)}
+            </div>
+            <div className="sim-formula-card__weight">
+              <span className="sim-formula-card__dot sim-formula-card__dot--urg" />
+              W3 Urg = {weights.w3_urgency.toFixed(2)}
+            </div>
+          </div>
+          <div className="sim-formula-card__override">
+            Override: wait &gt; 60 min → Score = 999
+          </div>
+        </div>
       </div>
 
       {/* Waitlist Table */}

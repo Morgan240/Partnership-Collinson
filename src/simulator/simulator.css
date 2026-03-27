@@ -119,14 +119,23 @@
 
 .sim-sidebar__item {
   width: 48px;
-  height: 48px;
+  min-height: 48px;
   border-radius: var(--lms-radius-lg);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: var(--lms-text-light);
   cursor: pointer;
   transition: all 0.15s ease;
+  gap: 2px;
+}
+
+.sim-sidebar__label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1;
 }
 
 .sim-sidebar__item:hover,
@@ -683,8 +692,117 @@
   border-color: rgba(255, 255, 255, 0.5);
 }
 
+/* ========== Formula Card ========== */
+.sim-formula-card {
+  background: #FFFFFF;
+  border: 1px solid var(--lms-form-border);
+  border-radius: var(--lms-radius-lg);
+  padding: 20px 24px;
+  min-width: 320px;
+  max-width: 380px;
+}
+
+.sim-formula-card__title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--lms-nav-bg);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sim-formula-card__equation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+  font-family: 'Roboto', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--lms-text-dark);
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+
+.sim-formula-card__label {
+  font-weight: 700;
+  color: var(--lms-nav-bg);
+}
+
+.sim-formula-card__eq {
+  color: var(--lms-text-light);
+}
+
+.sim-formula-card__plus {
+  color: var(--lms-text-light);
+  font-weight: 400;
+}
+
+.sim-formula-card__times {
+  font-size: 11px;
+  color: var(--lms-text-light);
+  margin: 0 1px;
+}
+
+.sim-formula-card__term {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.sim-formula-card__term--cap {
+  background: #E8F5E9;
+  color: #2E7D32;
+}
+
+.sim-formula-card__term--fair {
+  background: #E3F2FD;
+  color: #1565C0;
+}
+
+.sim-formula-card__term--urg {
+  background: #FFF3E0;
+  color: #E65100;
+}
+
+.sim-formula-card__weights {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--lms-text-medium);
+  font-family: 'Roboto', monospace;
+  margin-bottom: 12px;
+}
+
+.sim-formula-card__weight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sim-formula-card__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.sim-formula-card__dot--cap { background: #2E7D32; }
+.sim-formula-card__dot--fair { background: #1565C0; }
+.sim-formula-card__dot--urg { background: #E65100; }
+
+.sim-formula-card__override {
+  font-size: 11px;
+  color: var(--lms-text-light);
+  padding-top: 8px;
+  border-top: 1px solid #E5E5EA;
+  font-style: italic;
+}
+
 /* ========== Responsive ========== */
 @media (max-width: 1024px) {
   .sim-sidebar { display: none; }
   .sim-content { margin-left: 0; }
+  .sim-formula-card { display: none; }
 }
