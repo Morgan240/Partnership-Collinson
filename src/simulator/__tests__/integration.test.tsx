@@ -243,11 +243,15 @@ describe('WaitlistTable', () => {
         getFlight={mockGetFlight}
       />
     );
-    // G5 is rank #1 — first row should have the star and #1
+    // Table is now in entry order (like LMS). First row is G1 (waitlist_id=1).
+    // G5 (rank #1) still appears in the table with #1.
     const firstRow = container.querySelector('tbody tr');
     expect(firstRow).toBeTruthy();
-    expect(firstRow!.textContent).toContain('#1');
-    expect(firstRow!.textContent).toContain('Group 5');
+    expect(firstRow!.textContent).toContain('Group 1');
+    // Verify rank #1 appears somewhere in the table
+    const allRows = container.querySelectorAll('tbody tr');
+    const hasRank1 = Array.from(allRows).some(r => r.textContent?.includes('★ #1'));
+    expect(hasRank1).toBe(true);
   });
 
   it('shows star icon for rank 1', () => {

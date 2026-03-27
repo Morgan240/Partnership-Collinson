@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
+import collinsonLogoBlue from '../../assets/CIL Logo 2 - Versão Azul.svg';
 import '../simulator.css';
 
 export const LoginPage: React.FC = () => {
@@ -27,8 +28,7 @@ export const LoginPage: React.FC = () => {
     <div className="sim-login">
       <div className="sim-login__card">
         <div className="sim-login__logo">
-          <span style={{ fontSize: 28, marginRight: 8 }}>◇</span>
-          Collinson
+          <img src={collinsonLogoBlue} alt="Collinson" style={{ height: 36, width: 'auto' }} />
         </div>
         <div className="sim-login__subtitle">PriModel Simulator</div>
 
