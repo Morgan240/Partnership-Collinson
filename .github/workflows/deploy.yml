@@ -47,6 +47,26 @@ jobs:
           aws s3 cp dist/index.html s3://${{ secrets.S3_BUCKET }}/index.html \
             --cache-control "no-cache, no-store, must-revalidate"
 
+      - name: Configure CloudFront SPA fallback
+        run: |
+          DIST_ID="${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}"
+          # Get current config and ETag
+          aws cloudfront get-distribution-config --id "$DIST_ID" > /tmp/cf-full.json
+          ETAG=$(jq -r '.ETag' /tmp/cf-full.json)
+          # Inject custom error responses for SPA routing (403/404 → index.html)
+          jq '.DistributionConfig.CustomErrorResponses = {
+            "Quantity": 2,
+            "Items": [
+              {"ErrorCode": 403, "ResponsePagePath": "/index.html", "ResponseCode": "200", "ErrorCachingMinTTL": 0},
+              {"ErrorCode": 404, "ResponsePagePath": "/index.html", "ResponseCode": "200", "ErrorCachingMinTTL": 0}
+            ]
+          }' /tmp/cf-full.json | jq '.DistributionConfig' > /tmp/cf-update.json
+          # Apply updated config
+          aws cloudfront update-distribution \
+            --id "$DIST_ID" \
+            --if-match "$ETAG" \
+            --distribution-config file:///tmp/cf-update.json
+
       - name: Invalidate CloudFront cache
         run: |
           aws cloudfront create-invalidation \
