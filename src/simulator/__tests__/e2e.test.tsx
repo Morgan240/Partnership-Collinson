@@ -72,7 +72,7 @@ describe('E2E: Login Flow', () => {
     expect(screen.getByLabelText(/username/i)).toBeInTheDocument();
     expect(screen.getByLabelText(/password/i)).toBeInTheDocument();
     expect(screen.getByText(/sign in/i)).toBeInTheDocument();
-    expect(screen.getByText(/collinson/i)).toBeInTheDocument();
+    expect(screen.getByAltText(/collinson/i)).toBeInTheDocument();
     expect(screen.getByText(/primodel simulator/i)).toBeInTheDocument();
   });
 

@@ -87,6 +87,11 @@
   gap: 12px;
 }
 
+.sim-topnav__logo-img {
+  height: 30px;
+  width: auto;
+}
+
 .sim-topnav__title {
   font-size: 14px;
   font-weight: 400;

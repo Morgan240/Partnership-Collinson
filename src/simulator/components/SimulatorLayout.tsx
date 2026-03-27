@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navigate, Outlet } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
+import collinsonLogo from '../../assets/CIL Logo 2 - Tudo Branco Fundo Azul.svg';
 import '../simulator.css';
 
 export const SimulatorLayout: React.FC = () => {
@@ -15,8 +16,7 @@ export const SimulatorLayout: React.FC = () => {
       {/* Top Nav */}
       <header className="sim-topnav">
         <div className="sim-topnav__logo">
-          <span style={{ fontSize: 22 }}>◇</span>
-          Collinson
+          <img src={collinsonLogo} alt="Collinson" className="sim-topnav__logo-img" />
           <span className="sim-topnav__title">PriModel Simulator</span>
         </div>
         <div className="sim-topnav__right">
