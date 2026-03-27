@@ -49,13 +49,13 @@ jobs:
 
       - name: Deploy SPA fallback for /LMS routes
         run: |
-          # Copy index.html to SPA route paths so CloudFront/S3 serves the React app
-          aws s3 cp dist/index.html s3://${{ secrets.S3_BUCKET }}/LMS/index.html \
-            --cache-control "no-cache, no-store, must-revalidate"
-          aws s3 cp dist/index.html s3://${{ secrets.S3_BUCKET }}/LMS/login/index.html \
-            --cache-control "no-cache, no-store, must-revalidate"
-          aws s3 cp dist/index.html s3://${{ secrets.S3_BUCKET }}/LMS/waitlist/index.html \
-            --cache-control "no-cache, no-store, must-revalidate"
+          # Copy index.html as exact S3 keys matching SPA routes
+          # S3 REST API (CloudFront origin) requires exact key match — no auto index.html
+          for ROUTE in LMS LMS/login LMS/waitlist; do
+            aws s3 cp dist/index.html "s3://${{ secrets.S3_BUCKET }}/${ROUTE}" \
+              --cache-control "no-cache, no-store, must-revalidate" \
+              --content-type "text/html"
+          done
 
       - name: Invalidate CloudFront cache
         run: |
