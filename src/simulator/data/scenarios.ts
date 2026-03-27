@@ -1,7 +1,7 @@
 // PriModel v.2 - Preset Scenarios (Fake Database)
 // Sources:
 //   - Simulation v.2 spreadsheet (validation baseline)
-//   - MEX22 LMS real waitlist data (screenshots 27-Mar-2026 ~14:18)
+//   - MEX22 LMS real waitlist data (screenshots 27-Mar-2026 ~16:18)
 //   - PDF Test Cases
 //
 // Character sets: Toy Story (MEX22), Dragon Ball (peak hour demo)
@@ -36,30 +36,22 @@ export const SCENARIO_SPREADSHEET: Scenario = {
 };
 
 // ============================================================
-// MEX22 REAL DATA — FULL WAITLIST FROM LMS SCREENSHOT
+// MEX22 REAL DATA — WAITLIST FROM LMS SCREENSHOT
 // ============================================================
-// Source: LMS Waitlist screenshot, MEX22 lounge, 27-Mar-2026 ~14:18
-// ALL rows from the screenshot included exactly as shown.
-// Each passenger appears twice (one for each departure date).
-// Names anonymized with Toy Story characters.
+// Source: LMS Waitlist screenshot, MEX22 lounge, 27-Mar-2026 ~16:18
+// 10 unique passengers, deduplicated, names anonymized with Toy Story characters.
 //
-// Current time estimated: ~14:18 (David Ortiz had "Departing in 27m"
-// with dep time 14:45, so 14:45 - 27 = 14:18)
-
 // --- Passenger → Character Mapping ---
-// Ann Malenka → Woody
-// Heather Greenman → Buzz Lightyear
-// Ricardo Lucio Gil → Jessie
-// Luis Fernando González Ortega → Rex
-// Miguel Ángel Solís → Slinky Dog
-// Miguel Solís → Hamm
-// Luisa Ordonez → Mr. Potato Head
-// David Ortiz Zavala → Bo Peep
-// Carlos Verduzco → Forky
-// Esmeralda Allen → Lotso
-// Eduardo Picazo → Bullseye
-// Juan D → Duke Caboom
-// Victor Hugo Moreno → Alien
+// Miguel Velasco → Woody
+// Jesus de Avila → Buzz Lightyear
+// Marissa Manzanilla → Jessie
+// Leon Garcia Medrano → Rex
+// Luis Ochoa → Slinky Dog
+// Isvett Verde → Hamm
+// Sofia Aganza → Bo Peep
+// Vicente → Mr. Potato Head
+// Manoela Di Lascio Fernandes → Forky
+// Ruben Felix → Bullseye
 
 export interface WaitlistRow {
   id: number;
@@ -76,107 +68,46 @@ export interface WaitlistRow {
   comments: string;
 }
 
-// Full MEX22 waitlist data — every row from the screenshot
-export const MEX22_WAITLIST_RAW: WaitlistRow[] = [
-  // Row 1: Ann Malenka (27-Mar, Departed)
-  { id: 1,  passenger_name: 'Ann Malenka',                   character_name: 'Woody',           notified_min: 240, time_elapsed_min: 248, access_program: '-', flight_number: 'AM0640', flight_status: 'Departed',         departure_time: '12:50', departure_date: '27-Mar-2026', party_size: 3, comments: '-' },
-  // Row 2: Ann Malenka (28-Mar, Scheduled)
-  { id: 2,  passenger_name: 'Ann Malenka',                   character_name: 'Woody',           notified_min: 240, time_elapsed_min: 248, access_program: '-', flight_number: 'AM0640', flight_status: 'Scheduled',        departure_time: '12:35', departure_date: '28-Mar-2026', party_size: 3, comments: '-' },
-  // Row 3: Heather Greenman (28-Mar, Scheduled)
-  { id: 3,  passenger_name: 'Heather Greenman',              character_name: 'Buzz Lightyear',  notified_min: 240, time_elapsed_min: 247, access_program: '-', flight_number: 'AM0640', flight_status: 'Scheduled',        departure_time: '12:35', departure_date: '28-Mar-2026', party_size: 2, comments: '-' },
-  // Row 4: Heather Greenman (27-Mar, Departed)
-  { id: 4,  passenger_name: 'Heather Greenman',              character_name: 'Buzz Lightyear',  notified_min: 240, time_elapsed_min: 247, access_program: '-', flight_number: 'AM0640', flight_status: 'Departed',         departure_time: '12:50', departure_date: '27-Mar-2026', party_size: 2, comments: '-' },
-  // Row 5: Ricardo Lucio Gil (28-Mar, Scheduled)
-  { id: 5,  passenger_name: 'Ricardo Lucio Gil',             character_name: 'Jessie',          notified_min: 240, time_elapsed_min: 245, access_program: '-', flight_number: 'AM1534', flight_status: 'Scheduled',        departure_time: '12:55', departure_date: '28-Mar-2026', party_size: 1, comments: '-' },
-  // Row 6: Ricardo Lucio Gil (27-Mar, Departed)
-  { id: 6,  passenger_name: 'Ricardo Lucio Gil',             character_name: 'Jessie',          notified_min: 240, time_elapsed_min: 245, access_program: '-', flight_number: 'AM1534', flight_status: 'Departed',         departure_time: '13:05', departure_date: '27-Mar-2026', party_size: 1, comments: '-' },
-  // Row 7: Luis Fernando González Ortega (28-Mar, Scheduled)
-  { id: 7,  passenger_name: 'Luis Fernando González Ortega', character_name: 'Rex',             notified_min: 208, time_elapsed_min: 244, access_program: '-', flight_number: 'AM0037', flight_status: 'Scheduled',        departure_time: '17:20', departure_date: '28-Mar-2026', party_size: 3, comments: '-' },
-  // Row 8: Luis Fernando González Ortega (27-Mar, Scheduled)
-  { id: 8,  passenger_name: 'Luis Fernando González Ortega', character_name: 'Rex',             notified_min: 208, time_elapsed_min: 244, access_program: '-', flight_number: 'AM0037', flight_status: 'Scheduled',        departure_time: '17:15', departure_date: '27-Mar-2026', party_size: 3, comments: '-' },
-  // Row 9: Miguel Ángel Solís (28-Mar, Scheduled)
-  { id: 9,  passenger_name: 'Miguel Ángel Solís',            character_name: 'Slinky Dog',      notified_min: 223, time_elapsed_min: 241, access_program: '-', flight_number: 'AM0640', flight_status: 'Scheduled',        departure_time: '12:35', departure_date: '28-Mar-2026', party_size: 3, comments: '-' },
-  // Row 10: Miguel Ángel Solís (27-Mar, Departed)
-  { id: 10, passenger_name: 'Miguel Ángel Solís',            character_name: 'Slinky Dog',      notified_min: 223, time_elapsed_min: 241, access_program: '-', flight_number: 'AM0640', flight_status: 'Departed',         departure_time: '12:50', departure_date: '27-Mar-2026', party_size: 3, comments: '-' },
-  // Row 11: Miguel Solís (28-Mar, Scheduled)
-  { id: 11, passenger_name: 'Miguel Solís',                  character_name: 'Hamm',            notified_min: 218, time_elapsed_min: 227, access_program: '-', flight_number: 'AM0640', flight_status: 'Scheduled',        departure_time: '12:35', departure_date: '28-Mar-2026', party_size: 3, comments: '-' },
-  // Row 12: Miguel Solís (27-Mar, Departed)
-  { id: 12, passenger_name: 'Miguel Solís',                  character_name: 'Hamm',            notified_min: 218, time_elapsed_min: 227, access_program: '-', flight_number: 'AM0640', flight_status: 'Departed',         departure_time: '12:50', departure_date: '27-Mar-2026', party_size: 3, comments: '-' },
-  // Row 13: Luisa Ordonez (28-Mar, Scheduled)
-  { id: 13, passenger_name: 'Luisa Ordonez',                 character_name: 'Mr. Potato Head', notified_min: 200, time_elapsed_min: 203, access_program: '-', flight_number: 'AM0678', flight_status: 'Scheduled',        departure_time: '13:25', departure_date: '28-Mar-2026', party_size: 3, comments: '-' },
-  // Row 14: Luisa Ordonez (27-Mar, Departed)
-  { id: 14, passenger_name: 'Luisa Ordonez',                 character_name: 'Mr. Potato Head', notified_min: 200, time_elapsed_min: 203, access_program: '-', flight_number: 'AM0678', flight_status: 'Departed',         departure_time: '13:25', departure_date: '27-Mar-2026', party_size: 3, comments: '-' },
-  // Row 15: David Ortiz Zavala (28-Mar, Scheduled)
-  { id: 15, passenger_name: 'David Ortiz Zavala',            character_name: 'Bo Peep',         notified_min: 200, time_elapsed_min: 202, access_program: '-', flight_number: 'AM0494', flight_status: 'Scheduled',        departure_time: '14:45', departure_date: '28-Mar-2026', party_size: 2, comments: '-' },
-  // Row 16: David Ortiz Zavala (27-Mar, Departing in 27m)
-  { id: 16, passenger_name: 'David Ortiz Zavala',            character_name: 'Bo Peep',         notified_min: 200, time_elapsed_min: 202, access_program: '-', flight_number: 'AM0494', flight_status: 'Departing in 27m', departure_time: '14:45', departure_date: '27-Mar-2026', party_size: 2, comments: '-' },
-  // Row 17: Carlos Verduzco (28-Mar, Scheduled)
-  { id: 17, passenger_name: 'Carlos Verduzco',               character_name: 'Forky',           notified_min: 154, time_elapsed_min: 165, access_program: '-', flight_number: 'AM1634', flight_status: 'Scheduled',        departure_time: '14:35', departure_date: '28-Mar-2026', party_size: 2, comments: '-' },
-  // Row 18: Carlos Verduzco (27-Mar, Departed)
-  { id: 18, passenger_name: 'Carlos Verduzco',               character_name: 'Forky',           notified_min: 154, time_elapsed_min: 165, access_program: '-', flight_number: 'AM1634', flight_status: 'Departed',         departure_time: '13:45', departure_date: '27-Mar-2026', party_size: 2, comments: '-' },
-  // Row 19: Esmeralda Allen (28-Mar, Scheduled)
-  { id: 19, passenger_name: 'Esmeralda Allen',               character_name: 'Lotso',           notified_min: 81,  time_elapsed_min: 118, access_program: '-', flight_number: 'DL0599', flight_status: 'Scheduled',        departure_time: '15:30', departure_date: '28-Mar-2026', party_size: 3, comments: '-' },
-  // Row 20: Esmeralda Allen (27-Mar, Scheduled)
-  { id: 20, passenger_name: 'Esmeralda Allen',               character_name: 'Lotso',           notified_min: 81,  time_elapsed_min: 118, access_program: '-', flight_number: 'DL0599', flight_status: 'Scheduled',        departure_time: '15:30', departure_date: '27-Mar-2026', party_size: 3, comments: '-' },
-  // Row 21: Eduardo Picazo (28-Mar, Scheduled)
-  { id: 21, passenger_name: 'Eduardo Picazo',                character_name: 'Bullseye',        notified_min: 74,  time_elapsed_min: 85,  access_program: '-', flight_number: 'AM0304', flight_status: 'Scheduled',        departure_time: '16:15', departure_date: '28-Mar-2026', party_size: 5, comments: '-' },
-  // Row 22: Eduardo Picazo (27-Mar, Scheduled)
-  { id: 22, passenger_name: 'Eduardo Picazo',                character_name: 'Bullseye',        notified_min: 74,  time_elapsed_min: 85,  access_program: '-', flight_number: 'AM0304', flight_status: 'Scheduled',        departure_time: '16:15', departure_date: '27-Mar-2026', party_size: 5, comments: '-' },
-  // Row 23: Juan D (28-Mar, Scheduled)
-  { id: 23, passenger_name: 'Juan D',                        character_name: 'Duke Caboom',     notified_min: 68,  time_elapsed_min: 79,  access_program: '-', flight_number: 'AM1498', flight_status: 'Scheduled',        departure_time: '13:55', departure_date: '28-Mar-2026', party_size: 2, comments: '-' },
-  // Row 24: Juan D (27-Mar, Scheduled)
-  { id: 24, passenger_name: 'Juan D',                        character_name: 'Duke Caboom',     notified_min: 68,  time_elapsed_min: 79,  access_program: '-', flight_number: 'AM1498', flight_status: 'Scheduled',        departure_time: '15:45', departure_date: '27-Mar-2026', party_size: 2, comments: '-' },
-  // Row 25: Victor Hugo Moreno (Not Found)
-  { id: 25, passenger_name: 'Victor Hugo Moreno',            character_name: 'Alien',           notified_min: 64,  time_elapsed_min: 74,  access_program: '-', flight_number: 'AM0243', flight_status: 'Not Found',        departure_time: '-',     departure_date: '-',           party_size: 3, comments: '-' },
-];
-
 // ============================================================
 // MEX22 SIMULATION SCENARIO — Unique passengers for PriModel scoring
 // ============================================================
-// Deduplicated: one entry per unique passenger.
-// TTD calculated from scheduled flights at ~14:18 on 27-Mar-2026.
-// Departed flights → TTD=0 (v.2 has no flight_status dimension;
-// v.3 would exclude these with score=0)
+// 10 unique passengers from LMS screenshot ~16:18 on 27-Mar-2026.
+// Wait times: 1-46 min (well differentiated, no MAX_WAIT overrides).
+// Mix of party sizes (1-5), Scheduled and Not Found flights.
 
 export const SCENARIO_MEX22_TOYSTORY: Scenario = {
   id: 'mex22-toystory',
   name: "Andy's Lounge (Toy Story)",
-  description: '13 passageiros únicos na waitlist, 7 com voos já partidos. Esperas de até 248 min. O caos que o PriModel resolve.',
+  description: '10 passageiros na waitlist, esperas de 1 a 46 min. Mix de party sizes e voos. Scores bem diferenciados.',
   lounge_state: {
-    available_seats: 4,
+    available_seats: 5,
     max_capacity: 80,
-    current_headcount: 72,
+    current_headcount: 62,
     occupancy_level: 'high',
   },
   entries: [
-    // Woody (Ann Malenka) — party 3, AM0640 Departed, wait 248 min
-    { waitlist_id: 1,  party_size: 3, time_to_departure_min: 0,   wait_time_min: 248 },
-    // Buzz Lightyear (Heather Greenman) — party 2, AM0640 Departed, wait 247 min
-    { waitlist_id: 2,  party_size: 2, time_to_departure_min: 0,   wait_time_min: 247 },
-    // Jessie (Ricardo Lucio Gil) — party 1, AM1534 Departed, wait 245 min
-    { waitlist_id: 3,  party_size: 1, time_to_departure_min: 0,   wait_time_min: 245 },
-    // Rex (Luis Fernando González) — party 3, AM0037 17:15 Scheduled, wait 244 min
-    { waitlist_id: 4,  party_size: 3, time_to_departure_min: 177, wait_time_min: 244 },
-    // Slinky Dog (Miguel Ángel Solís) — party 3, AM0640 Departed, wait 241 min
-    { waitlist_id: 5,  party_size: 3, time_to_departure_min: 0,   wait_time_min: 241 },
-    // Hamm (Miguel Solís) — party 3, AM0640 Departed, wait 227 min
-    { waitlist_id: 6,  party_size: 3, time_to_departure_min: 0,   wait_time_min: 227 },
-    // Mr. Potato Head (Luisa Ordonez) — party 3, AM0678 Departed, wait 203 min
-    { waitlist_id: 7,  party_size: 3, time_to_departure_min: 0,   wait_time_min: 203 },
-    // Bo Peep (David Ortiz Zavala) — party 2, AM0494 Departing in 27m, wait 202 min
-    { waitlist_id: 8,  party_size: 2, time_to_departure_min: 27,  wait_time_min: 202 },
-    // Forky (Carlos Verduzco) — party 2, AM1634 Departed, wait 165 min
-    { waitlist_id: 9,  party_size: 2, time_to_departure_min: 0,   wait_time_min: 165 },
-    // Lotso (Esmeralda Allen) — party 3, DL0599 15:30 Scheduled, wait 118 min
-    { waitlist_id: 10, party_size: 3, time_to_departure_min: 72,  wait_time_min: 118 },
-    // Bullseye (Eduardo Picazo) — party 5, AM0304 16:15 Scheduled, wait 85 min
-    { waitlist_id: 11, party_size: 5, time_to_departure_min: 117, wait_time_min: 85 },
-    // Duke Caboom (Juan D) — party 2, AM1498 15:45 Scheduled, wait 79 min
-    { waitlist_id: 12, party_size: 2, time_to_departure_min: 87,  wait_time_min: 79 },
-    // Alien (Victor Hugo Moreno) — party 3, AM0243 Not Found, wait 74 min
-    { waitlist_id: 13, party_size: 3, time_to_departure_min: 60,  wait_time_min: 74 },
+    // Woody (Miguel Velasco) — party 2, AM0366 Scheduled dep 16:55, wait 46m, TTD≈37m
+    { waitlist_id: 1,  party_size: 2, time_to_departure_min: 37,  wait_time_min: 46 },
+    // Buzz Lightyear (Jesus de Avila) — party 4, AM0798 Scheduled dep 17:55, wait 13m, TTD≈97m
+    { waitlist_id: 2,  party_size: 4, time_to_departure_min: 97,  wait_time_min: 13 },
+    // Jessie (Marissa Manzanilla) — party 3, AM2442 Scheduled dep 19:45, wait 12m, TTD≈207m
+    { waitlist_id: 3,  party_size: 3, time_to_departure_min: 207, wait_time_min: 12 },
+    // Rex (Leon Garcia Medrano) — party 2, AM0497 Not Found, wait 11m, TTD≈60m (estimated)
+    { waitlist_id: 4,  party_size: 2, time_to_departure_min: 60,  wait_time_min: 11 },
+    // Slinky Dog (Luis Ochoa) — party 5, AM0037 Scheduled dep 17:20, wait 10m, TTD≈62m
+    { waitlist_id: 5,  party_size: 5, time_to_departure_min: 62,  wait_time_min: 10 },
+    // Hamm (Isvett Verde) — party 2, AM0404 Scheduled dep 16:30, wait 9m, TTD≈12m
+    { waitlist_id: 6,  party_size: 2, time_to_departure_min: 12,  wait_time_min: 9 },
+    // Bo Peep (Sofia Aganza) — party 2, AM0037 Scheduled dep 17:20, wait 6m, TTD≈62m
+    { waitlist_id: 7,  party_size: 2, time_to_departure_min: 62,  wait_time_min: 6 },
+    // Mr. Potato Head (Vicente) — party 2, AM352 Not Found, wait 6m, TTD≈60m (estimated)
+    { waitlist_id: 8,  party_size: 2, time_to_departure_min: 60,  wait_time_min: 6 },
+    // Forky (Manoela Di Lascio) — party 2, AM0014 Scheduled dep 18:40, wait 2m, TTD≈142m
+    { waitlist_id: 9,  party_size: 2, time_to_departure_min: 142, wait_time_min: 2 },
+    // Bullseye (Ruben Felix) — party 2, AM2132 Scheduled dep 17:05, wait 1m, TTD≈47m
+    { waitlist_id: 10, party_size: 2, time_to_departure_min: 47,  wait_time_min: 1 },
   ],
-  recommended_mode: 'efficiency_focus',
+  recommended_mode: 'balanced',
 };
 
 // Character name mapping
@@ -187,30 +118,24 @@ export const TOYSTORY_NAMES: Record<number, string> = {
   4: 'Rex',
   5: 'Slinky Dog',
   6: 'Hamm',
-  7: 'Mr. Potato Head',
-  8: 'Bo Peep',
+  7: 'Bo Peep',
+  8: 'Mr. Potato Head',
   9: 'Forky',
-  10: 'Lotso',
-  11: 'Bullseye',
-  12: 'Duke Caboom',
-  13: 'Alien',
+  10: 'Bullseye',
 };
 
 // Flight info for display
 export const MEX22_FLIGHTS: Record<number, { flight: string; destination: string; dep_time: string; status: string }> = {
-  1:  { flight: 'AM0640', destination: 'LAX', dep_time: '12:50', status: 'Departed' },
-  2:  { flight: 'AM0640', destination: 'LAX', dep_time: '12:50', status: 'Departed' },
-  3:  { flight: 'AM1534', destination: 'CUN', dep_time: '13:05', status: 'Departed' },
-  4:  { flight: 'AM0037', destination: 'MAD', dep_time: '17:15', status: 'Scheduled' },
-  5:  { flight: 'AM0640', destination: 'LAX', dep_time: '12:50', status: 'Departed' },
-  6:  { flight: 'AM0640', destination: 'LAX', dep_time: '12:50', status: 'Departed' },
-  7:  { flight: 'AM0678', destination: 'SCL', dep_time: '13:25', status: 'Departed' },
-  8:  { flight: 'AM0494', destination: 'GDL', dep_time: '14:45', status: 'Departing in 27m' },
-  9:  { flight: 'AM1634', destination: 'MTY', dep_time: '13:45', status: 'Departed' },
-  10: { flight: 'DL0599', destination: 'ATL', dep_time: '15:30', status: 'Scheduled' },
-  11: { flight: 'AM0304', destination: 'JFK', dep_time: '16:15', status: 'Scheduled' },
-  12: { flight: 'AM1498', destination: 'MIA', dep_time: '15:45', status: 'Scheduled' },
-  13: { flight: 'AM0243', destination: '???', dep_time: '—',     status: 'Not Found' },
+  1:  { flight: 'AM0366', destination: 'GDL', dep_time: '16:55', status: 'Scheduled' },
+  2:  { flight: 'AM0798', destination: 'CUN', dep_time: '17:55', status: 'Scheduled' },
+  3:  { flight: 'AM2442', destination: 'MTY', dep_time: '19:45', status: 'Scheduled' },
+  4:  { flight: 'AM0497', destination: '???', dep_time: '—',     status: 'Not Found' },
+  5:  { flight: 'AM0037', destination: 'MAD', dep_time: '17:20', status: 'Scheduled' },
+  6:  { flight: 'AM0404', destination: 'LAX', dep_time: '16:30', status: 'Scheduled' },
+  7:  { flight: 'AM0037', destination: 'MAD', dep_time: '17:20', status: 'Scheduled' },
+  8:  { flight: 'AM0352', destination: '???', dep_time: '—',     status: 'Not Found' },
+  9:  { flight: 'AM0014', destination: 'JFK', dep_time: '18:40', status: 'Scheduled' },
+  10: { flight: 'AM2132', destination: 'MIA', dep_time: '17:05', status: 'Scheduled' },
 };
 
 // ============================================================

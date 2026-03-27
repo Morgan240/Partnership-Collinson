@@ -12,16 +12,19 @@ interface Props {
 }
 
 export const WaitlistTable: React.FC<Props> = ({ rankings, selectedEntryId, onSelectEntry, getName, getFlight }) => {
+  // Show in entry order (by waitlist_id, like real LMS) — not sorted by rank
+  const entriesByArrival = [...rankings].sort((a, b) => a.entry.waitlist_id - b.entry.waitlist_id);
+
   return (
     <div>
       <div className="sim-section-header">
-        <span>📋</span> Waitlist Ranking
+        <span>📋</span> Waitlist
       </div>
       <div style={{ overflowX: 'auto' }}>
         <table className="sim-table">
           <thead>
             <tr>
-              <th style={{ width: 80 }}>PriModel Rank</th>
+              <th style={{ width: 30 }}>#</th>
               <th>Passenger</th>
               <th style={{ width: 50 }}>Pax</th>
               <th style={{ width: 70 }}>Wait</th>
@@ -29,11 +32,11 @@ export const WaitlistTable: React.FC<Props> = ({ rankings, selectedEntryId, onSe
               <th style={{ width: 110 }}>Status</th>
               <th style={{ width: 70 }}>Dep</th>
               <th style={{ width: 160 }}>PriModel Score</th>
-              <th>Reasoning</th>
+              <th style={{ width: 90 }}>PriModel Rank</th>
             </tr>
           </thead>
           <tbody>
-            {rankings.map((entry) => {
+            {entriesByArrival.map((entry, index) => {
               const flight = getFlight(entry.entry.waitlist_id);
               const isTop = entry.rank === 1;
               const isSelected = selectedEntryId === entry.entry.waitlist_id;
@@ -45,11 +48,7 @@ export const WaitlistTable: React.FC<Props> = ({ rankings, selectedEntryId, onSe
                   onClick={() => onSelectEntry(isSelected ? null : entry.entry.waitlist_id)}
                   style={isSelected ? { background: '#F0F7FB' } : undefined}
                 >
-                  <td>
-                    <span className={`sim-rank ${isTop ? 'sim-rank--top' : ''}`}>
-                      {isTop && '★ '}#{entry.rank}
-                    </span>
-                  </td>
+                  <td style={{ color: 'var(--lms-text-light)', fontSize: 12 }}>{index + 1}</td>
                   <td style={{ fontWeight: 500 }}>{getName(entry.entry.waitlist_id)}</td>
                   <td>{entry.entry.party_size}</td>
                   <td>{entry.entry.wait_time_min}m</td>
@@ -66,7 +65,11 @@ export const WaitlistTable: React.FC<Props> = ({ rankings, selectedEntryId, onSe
                       )}
                     </div>
                   </td>
-                  <td style={{ fontSize: 12, color: 'var(--lms-text-light)' }}>{entry.reasoning_label}</td>
+                  <td>
+                    <span className={`sim-rank ${isTop ? 'sim-rank--top' : ''}`}>
+                      {isTop && '★ '}#{entry.rank}
+                    </span>
+                  </td>
                 </tr>
               );
             })}
