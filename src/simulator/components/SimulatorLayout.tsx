@@ -15,6 +15,8 @@ export const SimulatorLayout: React.FC = () => {
 
   const is3D = location.pathname === '/LMS/waitlist';
   const is4D = location.pathname === '/LMS/waitlist4d';
+  const isAbout = location.pathname === '/LMS/about';
+  const isBenchmark = location.pathname === '/LMS/benchmark';
 
   return (
     <div className="sim-shell">
@@ -62,12 +64,31 @@ export const SimulatorLayout: React.FC = () => {
           </svg>
           <span className="sim-sidebar__label">4D</span>
         </div>
-        <div className="sim-sidebar__item" title="Analytics">
+        <div
+          className={`sim-sidebar__item ${isAbout ? 'sim-sidebar__item--active' : ''}`}
+          title="PriModel Overview"
+          onClick={() => navigate('/LMS/about')}
+          style={{ cursor: 'pointer' }}
+        >
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <line x1="18" y1="20" x2="18" y2="10" />
             <line x1="12" y1="20" x2="12" y2="4" />
             <line x1="6" y1="20" x2="6" y2="14" />
           </svg>
+          <span className="sim-sidebar__label">About</span>
+        </div>
+        <div
+          className={`sim-sidebar__item ${isBenchmark ? 'sim-sidebar__item--active' : ''}`}
+          title="Cross-Industry Benchmark"
+          onClick={() => navigate('/LMS/benchmark')}
+          style={{ cursor: 'pointer' }}
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="2" y1="12" x2="22" y2="12" />
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+          </svg>
+          <span className="sim-sidebar__label">Bench</span>
         </div>
         <div className="sim-sidebar__item" title="Settings">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
