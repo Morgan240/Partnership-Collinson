@@ -11,6 +11,7 @@ interface Props {
   getFlight: (id: number) => { flight: string; destination: string; dep_time: string; status: string; departure_date?: string } | undefined;
   getNotifiedMin?: (id: number) => number | null;
   getAccessProgram?: (id: number) => string;
+  overrideLabels?: Record<number, string>;
 }
 
 /* ── Inline SVG icon helpers (16×16) ── */
@@ -66,7 +67,7 @@ const iconBtnStyle: React.CSSProperties = {
   borderRadius: 4,
 };
 
-export const WaitlistTable: React.FC<Props> = ({ rankings, selectedEntryId, onSelectEntry, getName, getFlight, getNotifiedMin, getAccessProgram }) => {
+export const WaitlistTable: React.FC<Props> = ({ rankings, selectedEntryId, onSelectEntry, getName, getFlight, getNotifiedMin, getAccessProgram, overrideLabels }) => {
   const entriesByArrival = [...rankings].sort((a, b) => a.entry.waitlist_id - b.entry.waitlist_id);
 
   return (
@@ -173,8 +174,10 @@ export const WaitlistTable: React.FC<Props> = ({ rankings, selectedEntryId, onSe
                   <td>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                       <ScoreBar value={entry.primodel_score} />
-                      {entry.override_applied && (
-                        <span className="sim-badge sim-badge--maxwait">MAX WAIT</span>
+                      {(entry.override_applied || overrideLabels?.[entry.entry.waitlist_id]) && (
+                        <span className="sim-badge sim-badge--maxwait">
+                          {overrideLabels?.[entry.entry.waitlist_id] === 'MAX_SKIPS' ? 'MAX SKIPS' : 'MAX WAIT'}
+                        </span>
                       )}
                     </div>
                   </td>

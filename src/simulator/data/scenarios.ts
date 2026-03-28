@@ -447,6 +447,14 @@ export function getDefaultScenario(): Scenario {
   return SCENARIO_MEX22_TOYSTORY;
 }
 
+// Reference time for each scenario (the "now" used to calculate TTD and wait times)
+export const SCENARIO_REFERENCE_TIME: Record<string, { time: string; date: string }> = {
+  'spreadsheet-v2':    { time: '16:18', date: '27-Mar-2026' },
+  'mex22-toystory':    { time: '16:18', date: '27-Mar-2026' },
+  'mex22-dragonball':  { time: '16:18', date: '27-Mar-2026' },
+  'onepiece':          { time: '16:18', date: '27-Mar-2026' },
+};
+
 export function getCharacterName(scenarioId: string, waitlistId: number): string {
   if (scenarioId === 'mex22-toystory') return TOYSTORY_NAMES[waitlistId] ?? `Group ${waitlistId}`;
   if (scenarioId === 'mex22-dragonball') return DRAGONBALL_NAMES[waitlistId] ?? `Group ${waitlistId}`;

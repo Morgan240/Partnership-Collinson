@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navigate, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
-import collinsonLogo from '../../assets/CIL-Logo-white.svg';
+import collinsonLogo from '../../assets/CIL-Logo-white-transparent.svg';
 import '../simulator.css';
 
 export const SimulatorLayout: React.FC = () => {

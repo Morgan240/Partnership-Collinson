@@ -6,6 +6,7 @@ import { OccupancyIndicator } from '../components/OccupancyIndicator';
 import { WaitlistTable } from '../components/WaitlistTable';
 import { ScoreBreakdown } from '../components/ScoreBreakdown';
 import { FullRankingsTable } from '../components/FullRankingsTable';
+import { SCENARIO_REFERENCE_TIME } from '../data/scenarios';
 
 export const WaitlistPage: React.FC = () => {
   const {
@@ -96,6 +97,11 @@ export const WaitlistPage: React.FC = () => {
               W3 Urg = {weights.w3_urgency.toFixed(2)}
             </div>
           </div>
+          {SCENARIO_REFERENCE_TIME[scenario.id] && (
+            <div style={{ marginTop: 8, padding: '6px 10px', background: 'var(--lms-form-bg)', borderRadius: 'var(--lms-radius)', fontSize: 12, color: 'var(--lms-text-medium)', fontFamily: 'monospace' }}>
+              Reference: {SCENARIO_REFERENCE_TIME[scenario.id].date} {SCENARIO_REFERENCE_TIME[scenario.id].time}
+            </div>
+          )}
           <div className="sim-formula-card__override">
             Override: wait &gt; 60 min → Score = 999
           </div>
