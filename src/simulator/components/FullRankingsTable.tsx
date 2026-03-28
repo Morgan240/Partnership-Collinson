@@ -104,7 +104,7 @@ export const FullRankingsTable: React.FC<Props> = ({ rankings, dimensionRankings
                 <td><RankBadge rank={row.urg_rank} /></td>
                 <td>
                   <span style={{ fontWeight: 700 }}>
-                    {row.primodel_score === 999 ? '999' : row.primodel_score.toFixed(2)}
+                    {row.primodel_score >= 998 ? row.primodel_score.toString() : row.primodel_score.toFixed(2)}
                   </span>
                   {row.override && (
                     <span className="sim-badge sim-badge--maxwait" style={{ marginLeft: 6, fontSize: 10 }}>MAX</span>

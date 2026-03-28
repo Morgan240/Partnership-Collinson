@@ -4,6 +4,8 @@ import Index from "@/pages/Index";
 import { LoginPage } from "@/simulator/pages/LoginPage";
 import { WaitlistPage } from "@/simulator/pages/WaitlistPage";
 import { WaitlistPage4D } from "@/simulator/pages/WaitlistPage4D";
+import { PriModelAboutPage } from "@/simulator/pages/PriModelAboutPage";
+import { BenchmarkPage } from "@/simulator/pages/BenchmarkPage";
 import { SimulatorLayout } from "@/simulator/components/SimulatorLayout";
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
           <Route index element={<Navigate to="/LMS/login" replace />} />
           <Route path="waitlist" element={<WaitlistPage />} />
           <Route path="waitlist4d" element={<WaitlistPage4D />} />
+          <Route path="about" element={<PriModelAboutPage />} />
+          <Route path="benchmark" element={<BenchmarkPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

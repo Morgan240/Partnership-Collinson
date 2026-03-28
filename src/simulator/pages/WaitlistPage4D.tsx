@@ -7,6 +7,7 @@ import { WaitlistTable } from '../components/WaitlistTable';
 import { ScoreBreakdown4D } from '../components/ScoreBreakdown4D';
 import { FullRankingsTable4D } from '../components/FullRankingsTable4D';
 import { SCENARIOS_V3 } from '../data/scenariosV3';
+import { SCENARIO_REFERENCE_TIME } from '../data/scenarios';
 
 export const WaitlistPage4D: React.FC = () => {
   const {
@@ -36,9 +37,15 @@ export const WaitlistPage4D: React.FC = () => {
     weighted_scores: { capacity: r.weighted_scores.capacity, fairness: r.weighted_scores.fairness, urgency: r.weighted_scores.urgency },
     primodel_score: r.primodel_score,
     rank: r.rank,
-    override_applied: r.override_applied === 'MAX_SKIPS' ? 'MAX_WAIT' as const : r.override_applied === 'MAX_WAIT' ? 'MAX_WAIT' as const : null,
+    override_applied: r.override_applied === 'MAX_WAIT' ? 'MAX_WAIT' as const : null,
     reasoning_label: r.reasoning_label,
   }));
+
+  // Map for override badge labels in 4D (MAX_WAIT or MAX_SKIPS)
+  const overrideLabelMap: Record<number, string> = {};
+  rankings.forEach((r) => {
+    if (r.override_applied) overrideLabelMap[r.entry.waitlist_id] = r.override_applied;
+  });
 
   // For the 4D table, show access program in the "Access Program" column
   const getAccessProgram = (id: number) => {
@@ -121,6 +128,11 @@ export const WaitlistPage4D: React.FC = () => {
               W4 Urg = {weights.w4_urgency.toFixed(2)}
             </div>
           </div>
+          {SCENARIO_REFERENCE_TIME[scenario.id] && (
+            <div style={{ marginTop: 8, padding: '6px 10px', background: 'var(--lms-form-bg)', borderRadius: 'var(--lms-radius)', fontSize: 12, color: 'var(--lms-text-medium)', fontFamily: 'monospace' }}>
+              Reference: {SCENARIO_REFERENCE_TIME[scenario.id].date} {SCENARIO_REFERENCE_TIME[scenario.id].time}
+            </div>
+          )}
           <div className="sim-formula-card__override">
             Override: wait &gt; 60 min → 999 &nbsp;|&nbsp; skips &ge; 10 → 998
           </div>
@@ -135,6 +147,7 @@ export const WaitlistPage4D: React.FC = () => {
         getName={getName}
         getFlight={getFlight}
         getAccessProgram={getAccessProgram}
+        overrideLabels={overrideLabelMap}
       />
 
       {/* Score Breakdown (expanded row) */}
