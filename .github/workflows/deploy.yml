@@ -51,7 +51,7 @@ jobs:
         run: |
           # Copy index.html as exact S3 keys matching SPA routes
           # S3 REST API (CloudFront origin) requires exact key match — no auto index.html
-          for ROUTE in LMS LMS/login LMS/waitlist; do
+          for ROUTE in LMS LMS/login LMS/waitlist LMS/waitlist4d; do
             aws s3 cp dist/index.html "s3://${{ secrets.S3_BUCKET }}/${ROUTE}" \
               --cache-control "no-cache, no-store, must-revalidate" \
               --content-type "text/html"

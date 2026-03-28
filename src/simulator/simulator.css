@@ -88,7 +88,7 @@
 }
 
 .sim-topnav__logo-img {
-  height: 30px;
+  height: 45px;
   width: auto;
 }
 
@@ -114,6 +114,7 @@
   width: var(--lms-sidebar-width);
   background: #FFFFFF;
   border-right: 1px solid #E5E5EA;
+  box-shadow: 1px 0px 10px rgba(0,0,0,0.09);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -187,6 +188,12 @@
 }
 
 /* ========== Tables ========== */
+.sim-table-wrapper {
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1), 0px 4px 6px -4px rgba(0,0,0,0.1);
+  border-radius: var(--lms-radius-lg);
+  overflow: hidden;
+}
+
 .sim-table {
   width: 100%;
   border-collapse: separate;
@@ -517,6 +524,7 @@
   transition: width 0.4s ease;
 }
 
+.sim-breakdown__dim-fill--revenue  { background: var(--lms-primary); }
 .sim-breakdown__dim-fill--capacity { background: var(--lms-interactive); }
 .sim-breakdown__dim-fill--fairness { background: var(--lms-teal); }
 .sim-breakdown__dim-fill--urgency  { background: var(--lms-status-delayed-text); }
@@ -563,60 +571,42 @@
 /* ========== Login Page ========== */
 .sim-login {
   min-height: 100vh;
-  background: var(--lms-nav-bg);
+  background: #F7F7F7;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'Roboto', sans-serif;
 }
 
-.sim-login__card {
-  background: #FFFFFF;
-  border-radius: var(--lms-radius-lg);
-  padding: 48px 40px;
+.sim-login__form-area {
   width: 100%;
-  max-width: 400px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  max-width: 360px;
+  padding: 0 20px;
 }
 
 .sim-login__logo {
-  font-size: 20px;
-  font-weight: 700;
-  color: var(--lms-nav-bg);
   text-align: center;
-  margin-bottom: 8px;
-}
-
-.sim-login__subtitle {
-  font-size: 14px;
-  color: var(--lms-text-light);
-  text-align: center;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .sim-login__field {
-  margin-bottom: 20px;
-}
-
-.sim-login__field label {
-  display: block;
-  font-size: 12px;
-  font-weight: 500;
-  color: var(--lms-text-medium);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 6px;
+  margin-bottom: 16px;
 }
 
 .sim-login__field input {
   width: 100%;
   padding: 12px 14px;
-  border: 1px solid var(--lms-form-border);
+  border: 1px solid #BFBFBF;
   border-radius: var(--lms-radius);
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   color: var(--lms-text-dark);
   box-sizing: border-box;
+  background: #FFFFFF;
+}
+
+.sim-login__field input::placeholder {
+  color: var(--lms-text-light);
 }
 
 .sim-login__field input:focus {
@@ -627,19 +617,20 @@
 .sim-login__btn {
   width: 100%;
   height: var(--lms-button-height);
-  background: var(--lms-primary);
-  color: var(--lms-text-white);
+  background: #A8C4D4;
+  color: var(--lms-text-dark);
   border: none;
   border-radius: var(--lms-radius);
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   cursor: pointer;
   transition: background 0.15s ease;
+  margin-top: 8px;
 }
 
 .sim-login__btn:hover {
-  background: var(--lms-primary-hover);
+  background: #8FB4C8;
 }
 
 .sim-login__btn:disabled {
@@ -702,13 +693,12 @@
   background: #FFFFFF;
   border: 1px solid var(--lms-form-border);
   border-radius: var(--lms-radius-lg);
-  padding: 20px 24px;
-  min-width: 320px;
-  max-width: 380px;
+  padding: 24px 28px;
+  flex: 0 0 420px;
 }
 
 .sim-formula-card__title {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--lms-nav-bg);
   margin-bottom: 16px;
@@ -722,7 +712,7 @@
   align-items: baseline;
   gap: 6px;
   font-family: 'Roboto', monospace;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   color: var(--lms-text-dark);
   margin-bottom: 16px;
@@ -755,6 +745,11 @@
   font-size: 13px;
 }
 
+.sim-formula-card__term--rev {
+  background: #FCE4EC;
+  color: #AD1457;
+}
+
 .sim-formula-card__term--cap {
   background: #E8F5E9;
   color: #2E7D32;
@@ -774,7 +769,7 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--lms-text-medium);
   font-family: 'Roboto', monospace;
   margin-bottom: 12px;
@@ -793,6 +788,7 @@
   flex-shrink: 0;
 }
 
+.sim-formula-card__dot--rev { background: #AD1457; }
 .sim-formula-card__dot--cap { background: #2E7D32; }
 .sim-formula-card__dot--fair { background: #1565C0; }
 .sim-formula-card__dot--urg { background: #E65100; }
