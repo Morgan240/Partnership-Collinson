@@ -2,25 +2,77 @@ import { useState, useMemo, useCallback } from 'react';
 import type { OptimizationMode, ModeWeights, ScoredEntry, Scenario } from '../engine/types';
 import { rankEntries, calculateOccupancyLevel } from '../engine/scorer';
 import { getModeWeights } from '../engine/lookupTables';
-import { SCENARIOS, getDefaultScenario, getCharacterName, MEX22_FLIGHTS } from '../data/scenarios';
+import * as scenarioData from '../data/scenarios';
+import { SCENARIOS, getDefaultScenario, getCharacterName } from '../data/scenarios';
 import type { WaitlistEntry } from '../engine/types';
 
-// Flight info lookup (works for toystory scenario; others get generic data)
-const DRAGONBALL_FLIGHTS: Record<number, { flight: string; destination: string; dep_time: string; status: string }> = {
-  1: { flight: 'NK0101', destination: 'NMK', dep_time: '14:30', status: 'Scheduled' },
-  2: { flight: 'VG0202', destination: 'SAI', dep_time: '14:50', status: 'Scheduled' },
-  3: { flight: 'GH0303', destination: 'ORC', dep_time: '15:48', status: 'Scheduled' },
-  4: { flight: 'PC0404', destination: 'NAM', dep_time: '14:43', status: 'Delayed' },
-  5: { flight: 'KR0505', destination: 'KAM', dep_time: '15:03', status: 'Scheduled' },
-  6: { flight: 'TR0606', destination: 'WCC', dep_time: '16:18', status: 'Scheduled' },
-  7: { flight: 'BL0707', destination: 'CPC', dep_time: '17:18', status: 'Scheduled' },
-  8: { flight: 'FR0808', destination: 'ICE', dep_time: '14:58', status: 'Scheduled' },
+type FlightRecord = Record<number, { flight: string; destination: string; dep_time: string; status: string; departure_date?: string }>;
+type NotifiedRecord = Record<number, number | null>;
+
+// Build lookup maps from all scenario exports
+const FLIGHT_MAPS: Record<string, FlightRecord> = {};
+const NOTIFIED_MAPS: Record<string, NotifiedRecord> = {};
+
+// Auto-discover all *_FLIGHTS and *_NOTIFIED exports
+for (const [key, value] of Object.entries(scenarioData)) {
+  if (key.endsWith('_FLIGHTS') && typeof value === 'object' && value !== null) {
+    // Map scenario ID patterns to flight data
+    FLIGHT_MAPS[key] = value as FlightRecord;
+  }
+  if (key.endsWith('_NOTIFIED') && typeof value === 'object' && value !== null) {
+    NOTIFIED_MAPS[key] = value as NotifiedRecord;
+  }
+}
+
+// Scenario ID → export key prefix mapping
+const SCENARIO_KEY_MAP: Record<string, string> = {
+  'mex22-toystory': 'MEX22',
+  'mex22-dragonball': 'DRAGONBALL',
+  'onepiece': 'ONEPIECE',
+  'spreadsheet-v2': 'SPREADSHEET',
+  'marvel': 'MARVEL',
+  'naruto': 'NARUTO',
+  'harrypotter': 'HARRYPOTTER',
+  'starwars': 'STARWARS',
+  'pokemon': 'POKEMON',
+  'disney': 'DISNEY',
+  'ghibli': 'GHIBLI',
 };
 
+// Secondary prefix map for exports that don't follow the primary key pattern
+const ALT_PREFIX_MAP: Record<string, string[]> = {
+  'mex22-toystory': ['TOYSTORY', 'MEX22'],
+  'mex22-dragonball': ['DRAGONBALL'],
+};
+
+function getKeyPrefix(scenarioId: string): string {
+  return SCENARIO_KEY_MAP[scenarioId] || scenarioId.toUpperCase().replace(/-/g, '_');
+}
+
+// Get all prefixes to try for a scenario (primary + alternatives)
+function getPrefixes(scenarioId: string): string[] {
+  const primary = getKeyPrefix(scenarioId);
+  const alts = ALT_PREFIX_MAP[scenarioId];
+  if (alts) return [...alts, primary];
+  return [primary];
+}
+
+// Flight info lookup
 export function getFlightInfo(scenarioId: string, waitlistId: number) {
-  if (scenarioId === 'mex22-toystory') return MEX22_FLIGHTS[waitlistId];
-  if (scenarioId === 'mex22-dragonball') return DRAGONBALL_FLIGHTS[waitlistId];
-  return { flight: `FL${String(waitlistId).padStart(4, '0')}`, destination: '---', dep_time: '--:--', status: 'Scheduled' };
+  for (const prefix of getPrefixes(scenarioId)) {
+    const flights = FLIGHT_MAPS[prefix + '_FLIGHTS'];
+    if (flights && flights[waitlistId]) return flights[waitlistId];
+  }
+  return { flight: `FL${String(waitlistId).padStart(4, '0')}`, destination: '---', dep_time: '--:--', status: 'Scheduled', departure_date: '27-Mar-2026' };
+}
+
+// Notification lookup
+export function getNotifiedMinForScenario(scenarioId: string, waitlistId: number): number | null {
+  for (const prefix of getPrefixes(scenarioId)) {
+    const notified = NOTIFIED_MAPS[prefix + '_NOTIFIED'];
+    if (notified) return notified[waitlistId] ?? null;
+  }
+  return null;
 }
 
 export type CustomWeights = ModeWeights;
@@ -101,6 +153,10 @@ export function useSimulator() {
     return getFlightInfo(scenario.id, waitlistId);
   }, [scenario.id]);
 
+  const getNotifiedMin = useCallback((waitlistId: number) => {
+    return getNotifiedMinForScenario(scenario.id, waitlistId);
+  }, [scenario.id]);
+
   return {
     scenario,
     mode,
@@ -116,6 +172,7 @@ export function useSimulator() {
     changeWeight,
     getName,
     getFlight,
+    getNotifiedMin,
   };
 }
 

@@ -3,6 +3,7 @@ import { LanguageProvider } from "@/i18n/LanguageContext";
 import Index from "@/pages/Index";
 import { LoginPage } from "@/simulator/pages/LoginPage";
 import { WaitlistPage } from "@/simulator/pages/WaitlistPage";
+import { WaitlistPage4D } from "@/simulator/pages/WaitlistPage4D";
 import { SimulatorLayout } from "@/simulator/components/SimulatorLayout";
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/LMS" element={<SimulatorLayout />}>
           <Route index element={<Navigate to="/LMS/login" replace />} />
           <Route path="waitlist" element={<WaitlistPage />} />
+          <Route path="waitlist4d" element={<WaitlistPage4D />} />
         </Route>
       </Routes>
     </BrowserRouter>

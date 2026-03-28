@@ -1,13 +1,14 @@
 import React from 'react';
-import { useSimulator } from '../hooks/useSimulator';
+import { useSimulatorV3 } from '../hooks/useSimulatorV3';
 import { ScenarioSelector } from '../components/ScenarioSelector';
-import { ModeSelector } from '../components/ModeSelector';
+import { ModeSelector4D } from '../components/ModeSelector4D';
 import { OccupancyIndicator } from '../components/OccupancyIndicator';
 import { WaitlistTable } from '../components/WaitlistTable';
-import { ScoreBreakdown } from '../components/ScoreBreakdown';
-import { FullRankingsTable } from '../components/FullRankingsTable';
+import { ScoreBreakdown4D } from '../components/ScoreBreakdown4D';
+import { FullRankingsTable4D } from '../components/FullRankingsTable4D';
+import { SCENARIOS_V3 } from '../data/scenariosV3';
 
-export const WaitlistPage: React.FC = () => {
+export const WaitlistPage4D: React.FC = () => {
   const {
     scenario,
     mode,
@@ -22,12 +23,28 @@ export const WaitlistPage: React.FC = () => {
     changeWeight,
     getName,
     getFlight,
-    getNotifiedMin,
-  } = useSimulator();
+  } = useSimulatorV3(SCENARIOS_V3);
 
   const selectedEntry = selectedEntryId
     ? rankings.find((r) => r.entry.waitlist_id === selectedEntryId) || null
     : null;
+
+  // Adapt v3 rankings to the WaitlistTable props (it expects ScoredEntry-like objects)
+  const tableRankings = rankings.map((r) => ({
+    entry: r.entry,
+    scores: { capacity: r.scores.capacity, fairness: r.scores.fairness, urgency: r.scores.urgency },
+    weighted_scores: { capacity: r.weighted_scores.capacity, fairness: r.weighted_scores.fairness, urgency: r.weighted_scores.urgency },
+    primodel_score: r.primodel_score,
+    rank: r.rank,
+    override_applied: r.override_applied === 'MAX_SKIPS' ? 'MAX_WAIT' as const : r.override_applied === 'MAX_WAIT' ? 'MAX_WAIT' as const : null,
+    reasoning_label: r.reasoning_label,
+  }));
+
+  // For the 4D table, show access program in the "Access Program" column
+  const getAccessProgram = (id: number) => {
+    const entry = scenario.entries.find(e => e.waitlist_id === id);
+    return entry?.access_program || '-';
+  };
 
   return (
     <div>
@@ -48,7 +65,7 @@ export const WaitlistPage: React.FC = () => {
 
           <div className="sim-control-panel__row">
             <div style={{ flex: 1 }}>
-              <ModeSelector
+              <ModeSelector4D
                 activeMode={mode}
                 weights={weights}
                 onModeChange={changeMode}
@@ -64,57 +81,65 @@ export const WaitlistPage: React.FC = () => {
           )}
         </div>
 
-        {/* Formula Card */}
+        {/* Formula Card — 4D */}
         <div className="sim-formula-card">
-          <div className="sim-formula-card__title">PriModel v.2 — 3 Dimensions</div>
+          <div className="sim-formula-card__title">PriModel v.3 — 4 Dimensions</div>
           <div className="sim-formula-card__equation">
             <span className="sim-formula-card__label">PriorityScore</span>
             <span className="sim-formula-card__eq">=</span>
+            <span className="sim-formula-card__term sim-formula-card__term--rev">
+              W1<span className="sim-formula-card__times">×</span>Revenue
+            </span>
+            <span className="sim-formula-card__plus">+</span>
             <span className="sim-formula-card__term sim-formula-card__term--cap">
-              W1<span className="sim-formula-card__times">×</span>Capacity
+              W2<span className="sim-formula-card__times">×</span>Capacity
             </span>
             <span className="sim-formula-card__plus">+</span>
             <span className="sim-formula-card__term sim-formula-card__term--fair">
-              W2<span className="sim-formula-card__times">×</span>Fairness
+              W3<span className="sim-formula-card__times">×</span>Fairness
             </span>
             <span className="sim-formula-card__plus">+</span>
             <span className="sim-formula-card__term sim-formula-card__term--urg">
-              W3<span className="sim-formula-card__times">×</span>Urgency
+              W4<span className="sim-formula-card__times">×</span>Urgency
             </span>
           </div>
           <div className="sim-formula-card__weights">
             <div className="sim-formula-card__weight">
+              <span className="sim-formula-card__dot sim-formula-card__dot--rev" />
+              W1 Rev = {weights.w1_revenue.toFixed(2)}
+            </div>
+            <div className="sim-formula-card__weight">
               <span className="sim-formula-card__dot sim-formula-card__dot--cap" />
-              W1 Cap = {weights.w1_capacity.toFixed(2)}
+              W2 Cap = {weights.w2_capacity.toFixed(2)}
             </div>
             <div className="sim-formula-card__weight">
               <span className="sim-formula-card__dot sim-formula-card__dot--fair" />
-              W2 Fair = {weights.w2_fairness.toFixed(2)}
+              W3 Fair = {weights.w3_fairness.toFixed(2)}
             </div>
             <div className="sim-formula-card__weight">
               <span className="sim-formula-card__dot sim-formula-card__dot--urg" />
-              W3 Urg = {weights.w3_urgency.toFixed(2)}
+              W4 Urg = {weights.w4_urgency.toFixed(2)}
             </div>
           </div>
           <div className="sim-formula-card__override">
-            Override: wait &gt; 60 min → Score = 999
+            Override: wait &gt; 60 min → 999 &nbsp;|&nbsp; skips &ge; 10 → 998
           </div>
         </div>
       </div>
 
-      {/* Waitlist Table */}
+      {/* Waitlist Table — reuse 3D table but pass access program */}
       <WaitlistTable
-        rankings={rankings}
+        rankings={tableRankings}
         selectedEntryId={selectedEntryId}
         onSelectEntry={setSelectedEntryId}
         getName={getName}
         getFlight={getFlight}
-        getNotifiedMin={getNotifiedMin}
+        getAccessProgram={getAccessProgram}
       />
 
       {/* Score Breakdown (expanded row) */}
       {selectedEntry && (
-        <ScoreBreakdown
+        <ScoreBreakdown4D
           entry={selectedEntry}
           weights={weights}
           getName={getName}
@@ -122,8 +147,8 @@ export const WaitlistPage: React.FC = () => {
         />
       )}
 
-      {/* Full Rankings Table */}
-      <FullRankingsTable
+      {/* Full Rankings Table — 4D */}
+      <FullRankingsTable4D
         rankings={rankings}
         dimensionRankings={dimensionRankings}
         getName={getName}

@@ -1,15 +1,20 @@
 import React from 'react';
-import { Navigate, Outlet } from 'react-router-dom';
+import { Navigate, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
-import collinsonLogo from '../../assets/CIL Logo 2 - Tudo Branco Fundo Azul.svg';
+import collinsonLogo from '../../assets/CIL-Logo-white.svg';
 import '../simulator.css';
 
 export const SimulatorLayout: React.FC = () => {
   const { isAuthenticated, logout } = useAuth();
+  const location = useLocation();
+  const navigate = useNavigate();
 
   if (!isAuthenticated) {
     return <Navigate to="/LMS/login" replace />;
   }
+
+  const is3D = location.pathname === '/LMS/waitlist';
+  const is4D = location.pathname === '/LMS/waitlist4d';
 
   return (
     <div className="sim-shell">
@@ -28,7 +33,12 @@ export const SimulatorLayout: React.FC = () => {
 
       {/* Sidebar */}
       <aside className="sim-sidebar">
-        <div className="sim-sidebar__item sim-sidebar__item--active" title="Simulação 3D">
+        <div
+          className={`sim-sidebar__item ${is3D ? 'sim-sidebar__item--active' : ''}`}
+          title="Simulação 3D"
+          onClick={() => navigate('/LMS/waitlist')}
+          style={{ cursor: 'pointer' }}
+        >
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
             <polyline points="14 2 14 8 20 8" />
@@ -37,6 +47,20 @@ export const SimulatorLayout: React.FC = () => {
             <polyline points="10 9 9 9 8 9" />
           </svg>
           <span className="sim-sidebar__label">3D</span>
+        </div>
+        <div
+          className={`sim-sidebar__item ${is4D ? 'sim-sidebar__item--active' : ''}`}
+          title="Simulação 4D"
+          onClick={() => navigate('/LMS/waitlist4d')}
+          style={{ cursor: 'pointer' }}
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="3" y="3" width="7" height="7" />
+            <rect x="14" y="3" width="7" height="7" />
+            <rect x="14" y="14" width="7" height="7" />
+            <rect x="3" y="14" width="7" height="7" />
+          </svg>
+          <span className="sim-sidebar__label">4D</span>
         </div>
         <div className="sim-sidebar__item" title="Analytics">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

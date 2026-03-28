@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
-import collinsonLogoBlue from '../../assets/CIL Logo 2 - Versão Azul.svg';
+import collinsonLogoColor from '../../assets/CIL Logo 2.svg';
 import '../simulator.css';
 
 export const LoginPage: React.FC = () => {
@@ -26,15 +26,13 @@ export const LoginPage: React.FC = () => {
 
   return (
     <div className="sim-login">
-      <div className="sim-login__card">
+      <div className="sim-login__form-area">
         <div className="sim-login__logo">
-          <img src={collinsonLogoBlue} alt="Collinson" style={{ height: 36, width: 'auto' }} />
+          <img src={collinsonLogoColor} alt="Collinson" style={{ height: 60, width: 'auto' }} />
         </div>
-        <div className="sim-login__subtitle">PriModel Simulator</div>
 
         <form onSubmit={handleSubmit}>
           <div className="sim-login__field">
-            <label htmlFor="username">Username</label>
             <input
               id="username"
               type="text"
@@ -42,11 +40,11 @@ export const LoginPage: React.FC = () => {
               onChange={(e) => setUsername(e.target.value)}
               autoComplete="username"
               autoFocus
+              placeholder="Username"
             />
           </div>
 
           <div className="sim-login__field">
-            <label htmlFor="password">Password</label>
             <div style={{ position: 'relative' }}>
               <input
                 id="password"
@@ -54,6 +52,7 @@ export const LoginPage: React.FC = () => {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 autoComplete="current-password"
+                placeholder="Password"
               />
               <button
                 type="button"
@@ -67,16 +66,17 @@ export const LoginPage: React.FC = () => {
                   border: 'none',
                   cursor: 'pointer',
                   color: 'var(--lms-text-light)',
-                  fontSize: 14,
+                  fontSize: 13,
+                  fontFamily: 'Roboto, sans-serif',
                 }}
               >
-                {showPassword ? '🙈' : '👁'}
+                {showPassword ? 'Hide' : 'Show'}
               </button>
             </div>
           </div>
 
           <button type="submit" className="sim-login__btn" disabled={!username || !password}>
-            Sign In
+            Login
           </button>
 
           {error && <div className="sim-login__error">{error}</div>}

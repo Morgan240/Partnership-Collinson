@@ -1,9 +1,10 @@
 import React, { useState, useMemo } from 'react';
-import type { ScoredEntry } from '../engine/types';
+import type { ScoredEntryV3 } from '../engine/v3/types';
 
 interface Props {
-  rankings: ScoredEntry[];
+  rankings: ScoredEntryV3[];
   dimensionRankings: {
+    revRank: Record<number, number>;
     capRank: Record<number, number>;
     fairRank: Record<number, number>;
     urgRank: Record<number, number>;
@@ -12,9 +13,9 @@ interface Props {
   getFlight: (id: number) => { flight: string; destination: string; dep_time: string; status: string } | undefined;
 }
 
-type SortKey = 'name' | 'dep_time' | 'cap_score' | 'cap_rank' | 'fair_score' | 'fair_rank' | 'urg_score' | 'urg_rank' | 'primodel_score' | 'primodel_rank';
+type SortKey = 'name' | 'dep_time' | 'rev_score' | 'rev_rank' | 'cap_score' | 'cap_rank' | 'fair_score' | 'fair_rank' | 'urg_score' | 'urg_rank' | 'primodel_score' | 'primodel_rank';
 
-export const FullRankingsTable: React.FC<Props> = ({ rankings, dimensionRankings, getName, getFlight }) => {
+export const FullRankingsTable4D: React.FC<Props> = ({ rankings, dimensionRankings, getName, getFlight }) => {
   const [sortKey, setSortKey] = useState<SortKey>('primodel_rank');
   const [sortAsc, setSortAsc] = useState(true);
 
@@ -25,6 +26,8 @@ export const FullRankingsTable: React.FC<Props> = ({ rankings, dimensionRankings
         id: entry.entry.waitlist_id,
         name: getName(entry.entry.waitlist_id),
         dep_time: flight?.dep_time || '—',
+        rev_score: entry.scores.revenue,
+        rev_rank: dimensionRankings.revRank[entry.entry.waitlist_id] || 0,
         cap_score: entry.scores.capacity,
         cap_rank: dimensionRankings.capRank[entry.entry.waitlist_id] || 0,
         fair_score: entry.scores.fairness,
@@ -56,7 +59,7 @@ export const FullRankingsTable: React.FC<Props> = ({ rankings, dimensionRankings
       setSortAsc(!sortAsc);
     } else {
       setSortKey(key);
-      setSortAsc(key.includes('rank') ? true : false); // ranks ascending, scores descending
+      setSortAsc(key.includes('rank') ? true : false);
     }
   };
 
@@ -73,14 +76,16 @@ export const FullRankingsTable: React.FC<Props> = ({ rankings, dimensionRankings
   return (
     <div>
       <div className="sim-section-header" style={{ marginTop: 24 }}>
-        PriModel Full Rankings
+        PriModel Full Rankings (4D)
       </div>
-      <div style={{ overflowX: 'auto' }}>
+      <div className="sim-table-wrapper" style={{ overflowX: 'auto' }}>
         <table className="sim-table">
           <thead>
             <tr>
               <SortHeader k="name" label="Passenger" />
               <SortHeader k="dep_time" label="Dep Time" />
+              <SortHeader k="rev_score" label="Rev Score" />
+              <SortHeader k="rev_rank" label="Rev Rank" />
               <SortHeader k="cap_score" label="Cap Score" />
               <SortHeader k="cap_rank" label="Cap Rank" />
               <SortHeader k="fair_score" label="Fair Score" />
@@ -96,18 +101,22 @@ export const FullRankingsTable: React.FC<Props> = ({ rankings, dimensionRankings
               <tr key={row.id} className={row.primodel_rank === 1 ? 'sim-table__row--top' : ''}>
                 <td style={{ fontWeight: 500 }}>{row.name}</td>
                 <td style={{ fontSize: 13 }}>{row.dep_time}</td>
+                <td style={{ fontWeight: 500 }}>{row.rev_score.toFixed(0)}</td>
+                <td><RankBadge rank={row.rev_rank} /></td>
                 <td style={{ fontWeight: 500 }}>{row.cap_score.toFixed(1)}</td>
                 <td><RankBadge rank={row.cap_rank} /></td>
                 <td style={{ fontWeight: 500 }}>{row.fair_score.toFixed(1)}</td>
                 <td><RankBadge rank={row.fair_rank} /></td>
-                <td style={{ fontWeight: 500 }}>{row.urg_score.toFixed(1)}</td>
+                <td style={{ fontWeight: 500 }}>{row.urg_score.toFixed(0)}</td>
                 <td><RankBadge rank={row.urg_rank} /></td>
                 <td>
                   <span style={{ fontWeight: 700 }}>
-                    {row.primodel_score === 999 ? '999' : row.primodel_score.toFixed(2)}
+                    {row.primodel_score >= 998 ? row.primodel_score.toString() : row.primodel_score.toFixed(2)}
                   </span>
                   {row.override && (
-                    <span className="sim-badge sim-badge--maxwait" style={{ marginLeft: 6, fontSize: 10 }}>MAX</span>
+                    <span className="sim-badge sim-badge--maxwait" style={{ marginLeft: 6, fontSize: 10 }}>
+                      {row.override === 'MAX_WAIT' ? 'MAX' : 'SKIPS'}
+                    </span>
                   )}
                 </td>
                 <td>
